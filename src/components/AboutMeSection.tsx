@@ -12,7 +12,7 @@ const AboutMeSection = () => {
             <img
               src={davidPhoto}
               alt="David Sheikh"
-              className="w-28 h-28 sm:w-48 sm:h-48 md:w-64 md:h-64 object-cover rounded-lg"
+              className="w-28 h-36 sm:w-48 sm:h-60 md:w-64 md:h-80 object-cover object-top rounded-lg"
               loading="lazy"
               width={256}
               height={256}

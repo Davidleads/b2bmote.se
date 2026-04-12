@@ -1,3 +1,5 @@
+import { Search, Settings, PiggyBank, ShieldCheck, Handshake } from "lucide-react";
+
 const sevarpItems = [
   { letter: "S", label: "Situation" },
   { letter: "E", label: "Effekt" },
@@ -5,6 +7,14 @@ const sevarpItems = [
   { letter: "A", label: "Affär" },
   { letter: "R", label: "Risk" },
   { letter: "P", label: "Partnerskap" },
+];
+
+const steps = [
+  { Icon: Search, text: "Förstå er kund och situation" },
+  { Icon: Settings, text: "Identifiera vad som faktiskt driver beslut" },
+  { Icon: PiggyBank, text: "Koppla ert erbjudande till affärsvärde" },
+  { Icon: ShieldCheck, text: "Eliminera tvekan och risk" },
+  { Icon: Handshake, text: "Stäng affären och bygg långsiktighet" },
 ];
 
 const SevarpSection = () => {
@@ -39,27 +49,24 @@ const SevarpSection = () => {
 
         <div className="bg-cream-dark border-2 border-gold/30 rounded-xl p-5 sm:p-8 md:p-12">
           <h3 className="font-heading font-bold text-lg sm:text-2xl md:text-3xl text-navy mb-2">
-            ⚙ HUR DET FUNKAR <span className="font-body text-sm sm:text-lg font-normal">(Förenklad SEVARP)</span>
+            <Settings className="inline w-5 h-5 sm:w-7 sm:h-7 text-gold mr-2 -mt-1" />
+            HUR DET FUNKAR <span className="font-body text-sm sm:text-lg font-normal">(Förenklad SEVARP)</span>
           </h3>
           <p className="font-body text-xs sm:text-base text-foreground mb-6 sm:mb-10">
             Jag jobbar med en strukturerad metod för att driva affärer från första kontakt till avslut:
           </p>
 
           <div className="grid grid-cols-5 gap-1 sm:gap-4 mb-6 sm:mb-10 relative">
-            {[
-              { icon: "🔍", text: "Förstå er kund och situation" },
-              { icon: "⚙️", text: "Identifiera vad som faktiskt driver beslut" },
-              { icon: "💰", text: "Koppla ert erbjudande till affärsvärde" },
-              { icon: "✅", text: "Eliminera tvekan och risk" },
-              { icon: "🤝", text: "Stäng affären och bygg långsiktighet" },
-            ].map((step, i) => (
-              <div key={i} className="flex flex-col items-center text-center">
-                <div className="text-lg sm:text-3xl mb-1 sm:mb-3">{step.icon}</div>
+            {steps.map((step, i) => (
+              <div key={i} className="flex flex-col items-center text-center relative z-10">
+                <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-navy border-2 border-gold flex items-center justify-center mb-1 sm:mb-3">
+                  <step.Icon className="w-4 h-4 sm:w-6 sm:h-6 text-gold" />
+                </div>
                 <div className="w-3 h-3 sm:w-4 sm:h-4 bg-navy border-2 border-gold rounded-sm mb-1 sm:mb-2" />
                 <p className="font-body text-[8px] sm:text-xs md:text-sm text-foreground">{step.text}</p>
               </div>
             ))}
-            <div className="absolute top-[2rem] sm:top-[3.2rem] left-[10%] right-[10%] h-0.5 bg-navy" style={{ zIndex: 0 }} />
+            <div className="absolute top-[1.2rem] sm:top-[1.8rem] left-[10%] right-[10%] h-0.5 bg-navy" style={{ zIndex: 0 }} />
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
