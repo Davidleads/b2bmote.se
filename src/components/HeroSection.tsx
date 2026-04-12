@@ -4,7 +4,17 @@ const HeroSection = () => {
   return (
     <section className="section-navy relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24 space-y-8 sm:space-y-10">
-        {/* Top: centered headline + subtitle + CTA */}
+        {/* Top: H1 with arrow image to the right */}
+        <div className="grid grid-cols-[1fr_auto] gap-4 sm:gap-8 items-center">
+          <h1 className="font-heading font-900 text-2xl sm:text-4xl lg:text-6xl leading-tight text-cream">
+            Jag hittar rätt kunder, bokar möten – och driver dem hela vägen till affär.
+          </h1>
+          <div className="flex justify-center sm:justify-end">
+            <img src={heroArrow} alt="Tillväxtpil" width={800} height={800} className="w-24 sm:w-full sm:max-w-xs rounded-lg" />
+          </div>
+        </div>
+
+        {/* Below: centered subtitle + CTA */}
         <div className="text-center space-y-4 sm:space-y-6 max-w-3xl mx-auto">
           <p className="font-heading text-gold text-sm sm:text-lg md:text-xl font-bold">
             Öka er träffsäkerhet och stäng fler affärer – utan att jaga fler leads
@@ -19,16 +29,6 @@ const HeroSection = () => {
             <a href="#contact" className="cta-box inline-flex items-center gap-2 text-xs sm:text-sm">
               Boka ett kostnadsfritt möte <span>→</span>
             </a>
-          </div>
-        </div>
-
-        {/* Bottom: H1 with arrow image to the right */}
-        <div className="grid grid-cols-[1fr_auto] sm:grid-cols-[1fr_auto] gap-4 sm:gap-8 items-center">
-          <h1 className="font-heading font-900 text-2xl sm:text-4xl lg:text-6xl leading-tight text-cream">
-            Jag hittar rätt kunder, bokar möten – och driver dem hela vägen till affär.
-          </h1>
-          <div className="flex justify-center sm:justify-end">
-            <img src={heroArrow} alt="Tillväxtpil" width={800} height={800} className="w-24 sm:w-full sm:max-w-xs rounded-lg" />
           </div>
         </div>
       </div>
