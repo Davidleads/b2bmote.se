@@ -44,6 +44,14 @@ const ExclusivitySection = () => {
             <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
             <span>070-424 88 89</span>
           </div>
+          <a
+            href="https://www.linkedin.com/in/david-sheikh-7bb8a2319"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm hover:text-gold transition-colors"
+          >
+            <Linkedin className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
+          </a>
         </div>
       </div>
     </section>
