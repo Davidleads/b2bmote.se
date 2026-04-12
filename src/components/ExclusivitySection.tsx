@@ -1,4 +1,4 @@
-import { AlertTriangle, User, MapPin, Mail, Phone } from "lucide-react";
+import { AlertTriangle, User, MapPin, Mail, Phone, Linkedin } from "lucide-react";
 
 const ExclusivitySection = () => {
   return (
