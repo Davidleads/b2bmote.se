@@ -1,4 +1,4 @@
-import { Search, Settings, PiggyBank, ShieldCheck, Handshake } from "lucide-react";
+import { Search, Settings, PiggyBank, ShieldCheck, Handshake, Move } from "lucide-react";
 
 const sevarpItems = [
   { letter: "S", label: "Situation" },
@@ -29,6 +29,13 @@ const SevarpSection = () => {
             Jag arbetar med en egenutvecklad affärsmodell för att förstå kundens verklighet på djupet och säkerställa att varje dialog leder mot en relevant och hållbar affär.
           </p>
 
+          {/* Arrow circle above the letter grid */}
+          <div className="flex justify-center mb-3 sm:mb-4">
+            <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-full border-2 border-gold/70 bg-navy-light flex items-center justify-center">
+              <Move className="w-5 h-5 sm:w-7 sm:h-7 text-gold" />
+            </div>
+          </div>
+
           <div className="flex justify-center mb-6 sm:mb-8">
             <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 max-w-md w-full">
               {sevarpItems.map((item, i) => (
@@ -40,8 +47,27 @@ const SevarpSection = () => {
             </div>
           </div>
 
-          <div className="bg-navy-light border border-gold/40 rounded-lg p-3 sm:p-4 max-w-xl mx-auto text-center">
-            <p className="text-cream/90 font-body text-[10px] sm:text-sm italic">
+          {/* Flow line: Deras värld → Ditt värde → Ditt beslut */}
+          <div className="flex items-center justify-center gap-2 sm:gap-4 mb-6 sm:mb-8">
+            <span className="bg-gold/20 border border-gold/50 rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 text-cream font-body text-[10px] sm:text-sm font-semibold text-center">
+              Deras värld
+            </span>
+            <svg className="w-5 h-3 sm:w-8 sm:h-4 text-gold flex-shrink-0" viewBox="0 0 32 16" fill="none">
+              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span className="bg-gold/20 border border-gold/50 rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 text-cream font-body text-[10px] sm:text-sm font-semibold text-center">
+              Ditt värde
+            </span>
+            <svg className="w-5 h-3 sm:w-8 sm:h-4 text-gold flex-shrink-0" viewBox="0 0 32 16" fill="none">
+              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span className="bg-gold/20 border border-gold/50 rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 text-cream font-body text-[10px] sm:text-sm font-semibold text-center">
+              Ditt beslut
+            </span>
+          </div>
+
+          <div className="bg-cream/10 border border-gold/40 rounded-lg p-3 sm:p-4 max-w-xl mx-auto text-center">
+            <p className="text-cream font-body text-[10px] sm:text-sm italic">
               Istället för att fokusera på avslut i stunden, skapar jag affärer som bygger på förståelse, förtroende och långsiktighet.
             </p>
           </div>
