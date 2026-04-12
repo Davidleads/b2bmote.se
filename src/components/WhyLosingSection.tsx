@@ -1,0 +1,78 @@
+import { Lightbulb, Users, TrendingUp, Banknote } from "lucide-react";
+
+const benefits = [
+  { icon: Lightbulb, text: "Identifiera kundens verkliga och dolda behov" },
+  { icon: Users, text: "Förbättra säljsamtal och mötesstruktur" },
+  { icon: TrendingUp, text: "Öka konvertering från möte till affär" },
+  { icon: Banknote, text: "Skapa erbjudanden som kunder faktiskt vill köpa" },
+];
+
+const WhyLosingSection = () => {
+  return (
+    <section className="section-cream py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Quote */}
+        <div className="text-center mb-16">
+          <p className="gold-badge inline-block mb-6">VARFÖR NI TAPPAR AFFÄRER</p>
+          <blockquote className="font-heading text-2xl md:text-3xl italic text-navy max-w-3xl mx-auto leading-snug mb-6">
+            "Företag förlorar inte affärer för att de saknar kvalitet – utan för att kunden saknar det känslomässiga värde som skapar trygghet i beslutet."
+          </blockquote>
+          <p className="font-heading font-bold text-navy text-lg">
+            Jag hjälper er att äga kundens uppmärksamhet, behov och beslut genom hela resan.
+          </p>
+        </div>
+
+        {/* Benefits */}
+        <h3 className="font-body font-semibold text-xl md:text-2xl text-foreground mb-8">
+          Så skapar jag fler affärer för er
+        </h3>
+        <div className="grid sm:grid-cols-2 gap-4 mb-16">
+          {benefits.map((b, i) => (
+            <div key={i} className="card-navy flex items-center gap-4">
+              <b.icon className="w-6 h-6 text-gold flex-shrink-0" />
+              <span className="text-cream font-body text-sm">{b.text}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* How I do it - Tree */}
+        <h3 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-10">
+          Hur jag gör det
+        </h3>
+        <div className="flex flex-col items-center">
+          {/* Top boxes */}
+          <div className="grid grid-cols-3 gap-4 md:gap-8 w-full max-w-2xl mb-2">
+            {["Psykologi +\nbeteendeanalys", "Datadriven\nsegmentering", "Social proof &\npositionering"].map((t, i) => (
+              <div key={i} className="card-navy-bordered text-center text-cream font-body text-xs md:text-sm font-semibold py-4 whitespace-pre-line">
+                {t}
+              </div>
+            ))}
+          </div>
+          {/* Lines converging */}
+          <svg viewBox="0 0 400 80" className="w-full max-w-2xl h-20" fill="none">
+            <path d="M67 0 L200 70" stroke="hsl(42,60%,54%)" strokeWidth="2"/>
+            <path d="M200 0 L200 70" stroke="hsl(42,60%,54%)" strokeWidth="2"/>
+            <path d="M333 0 L200 70" stroke="hsl(42,60%,54%)" strokeWidth="2"/>
+          </svg>
+          {/* Bottom flow */}
+          <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
+            {["Från deras värld", "till ditt värde", "till beslut"].map((t, i) => (
+              <div key={i} className="flex items-center gap-3">
+                <div className="border-2 border-gold rounded-full px-5 py-2 font-body text-sm font-semibold text-navy bg-cream-dark">
+                  {t}
+                </div>
+                {i < 2 && (
+                  <svg width="24" height="16" viewBox="0 0 24 16" fill="none">
+                    <path d="M0 8H20M20 8L14 2M20 8L14 14" stroke="hsl(42,60%,54%)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhyLosingSection;
