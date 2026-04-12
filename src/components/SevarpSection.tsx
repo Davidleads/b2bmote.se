@@ -128,9 +128,9 @@ const SevarpSection = () => {
             <div className="bg-navy rounded-full px-4 sm:px-6 py-1.5 sm:py-2 text-gold font-body text-[10px] sm:text-sm font-semibold">
               Enkelt utåt – avancerat bakom.
             </div>
-            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-              <span className="font-body text-[10px] sm:text-sm text-foreground text-center">Vill ni göra det enklare för kunden att säga ja – då bör vi prata.</span>
-              <a href="#contact" className="cta-box text-[10px] sm:text-xs whitespace-nowrap">
+            <div className="flex flex-col items-center gap-2 sm:gap-3">
+              <span className="font-body text-xs sm:text-sm text-foreground text-center">Vill ni göra det enklare för kunden att säga ja – då bör vi prata.</span>
+              <a href="#contact" className="cta-box text-xs sm:text-sm">
                 Boka ett möte och se hur det fungerar i praktiken
               </a>
             </div>
