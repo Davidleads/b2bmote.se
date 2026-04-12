@@ -37,9 +37,9 @@ const WhyLosingSection = () => {
           Hur jag gör det
         </h3>
         <div className="flex flex-col items-center">
-          <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-8 w-full max-w-2xl mb-2">
+          <div className="grid grid-cols-3 gap-3 sm:gap-6 md:gap-8 w-full max-w-3xl mb-2">
             {["Psykologi +\nbeteendeanalys", "Datadriven\nsegmentering", "Social proof &\npositionering"].map((t, i) => (
-              <div key={i} className="card-navy-bordered text-center text-cream font-body text-[10px] sm:text-xs md:text-sm font-semibold py-3 sm:py-4 whitespace-pre-line !p-2 sm:!p-4">
+              <div key={i} className="card-navy-bordered flex items-center justify-center text-center text-cream font-body text-[10px] sm:text-sm md:text-base font-semibold py-4 sm:py-5 min-h-[80px] sm:min-h-[100px] whitespace-pre-line">
                 {t}
               </div>
             ))}
