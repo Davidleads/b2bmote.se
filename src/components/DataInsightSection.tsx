@@ -28,23 +28,23 @@ const cards = [
 
 const DataInsightSection = () => {
   return (
-    <section className="section-cream py-16 md:py-24">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-10">
+    <section className="section-cream py-12 sm:py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-navy mb-8 sm:mb-10">
           Data, Insikt & Operativ Kraft
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
           {cards.map((card, i) => (
             <div key={i} className="bg-cream-dark border-2 border-gold/30 rounded-xl overflow-hidden">
-              <div className="bg-navy p-6 flex justify-center">
-                <card.icon className="w-10 h-10 text-gold" />
+              <div className="bg-navy p-3 sm:p-6 flex justify-center">
+                <card.icon className="w-6 h-6 sm:w-10 sm:h-10 text-gold" />
               </div>
-              <div className="bg-gold px-4 py-2">
-                <h4 className="font-heading font-bold text-navy text-sm">{card.title}</h4>
+              <div className="bg-gold px-2 sm:px-4 py-1.5 sm:py-2">
+                <h4 className="font-heading font-bold text-navy text-[10px] sm:text-sm">{card.title}</h4>
               </div>
-              <div className="p-5 space-y-3">
+              <div className="p-3 sm:p-5 space-y-2 sm:space-y-3">
                 {card.texts.map((t, j) => (
-                  <p key={j} className="font-body text-xs md:text-sm text-foreground leading-relaxed">{t}</p>
+                  <p key={j} className="font-body text-[10px] sm:text-xs md:text-sm text-foreground leading-relaxed">{t}</p>
                 ))}
               </div>
             </div>
