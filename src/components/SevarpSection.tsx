@@ -1,4 +1,4 @@
-import { Search, Settings, PiggyBank, ShieldCheck, Handshake, Move } from "lucide-react";
+import { Search, Settings, PiggyBank, ShieldCheck, Handshake } from "lucide-react";
 
 const sevarpItems = [
   { letter: "S", label: "Situation" },
@@ -17,6 +17,37 @@ const steps = [
   { Icon: Handshake, text: "Stäng affären och bygg långsiktighet" },
 ];
 
+const ArrowCircle = () => (
+  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-2 border-gold bg-navy-light flex items-center justify-center">
+    <svg className="w-7 h-7 sm:w-9 sm:h-9 text-gold" viewBox="0 0 40 40" fill="none">
+      {/* Up */}
+      <path d="M20 4l-4 5h8l-4-5z" fill="currentColor"/>
+      <line x1="20" y1="9" x2="20" y2="17" stroke="currentColor" strokeWidth="1.5"/>
+      {/* Down */}
+      <path d="M20 36l-4-5h8l-4 5z" fill="currentColor"/>
+      <line x1="20" y1="31" x2="20" y2="23" stroke="currentColor" strokeWidth="1.5"/>
+      {/* Left */}
+      <path d="M4 20l5-4v8l-5-4z" fill="currentColor"/>
+      <line x1="9" y1="20" x2="17" y2="20" stroke="currentColor" strokeWidth="1.5"/>
+      {/* Right */}
+      <path d="M36 20l-5-4v8l5-4z" fill="currentColor"/>
+      <line x1="31" y1="20" x2="23" y2="20" stroke="currentColor" strokeWidth="1.5"/>
+      {/* Diag top-left */}
+      <path d="M8 8l1 5-5-1 4-4z" fill="currentColor"/>
+      <line x1="11" y1="11" x2="16" y2="16" stroke="currentColor" strokeWidth="1.2"/>
+      {/* Diag top-right */}
+      <path d="M32 8l-1 5 5-1-4-4z" fill="currentColor"/>
+      <line x1="29" y1="11" x2="24" y2="16" stroke="currentColor" strokeWidth="1.2"/>
+      {/* Diag bottom-left */}
+      <path d="M8 32l1-5-5 1 4 4z" fill="currentColor"/>
+      <line x1="11" y1="29" x2="16" y2="24" stroke="currentColor" strokeWidth="1.2"/>
+      {/* Diag bottom-right */}
+      <path d="M32 32l-1-5 5 1-4 4z" fill="currentColor"/>
+      <line x1="29" y1="29" x2="24" y2="24" stroke="currentColor" strokeWidth="1.2"/>
+    </svg>
+  </div>
+);
+
 const SevarpSection = () => {
   return (
     <section className="section-cream py-12 sm:py-16 md:py-24">
@@ -25,49 +56,47 @@ const SevarpSection = () => {
           <h2 className="font-heading font-bold text-xl sm:text-2xl md:text-4xl text-cream text-center mb-3 sm:mb-4">
             En strukturerad modell för att driva affärer
           </h2>
-          <p className="text-cream/80 text-center font-body text-xs sm:text-sm md:text-base max-w-2xl mx-auto mb-6 sm:mb-10">
+          <p className="text-cream text-center font-body text-xs sm:text-sm md:text-base max-w-2xl mx-auto mb-6 sm:mb-10">
             Jag arbetar med en egenutvecklad affärsmodell för att förstå kundens verklighet på djupet och säkerställa att varje dialog leder mot en relevant och hållbar affär.
           </p>
 
-          {/* Arrow circle above the letter grid */}
-          <div className="flex justify-center mb-3 sm:mb-4">
-            <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-full border-2 border-gold/70 bg-navy-light flex items-center justify-center">
-              <Move className="w-5 h-5 sm:w-7 sm:h-7 text-gold" />
-            </div>
-          </div>
-
           <div className="flex justify-center mb-6 sm:mb-8">
-            <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 max-w-md w-full">
+            <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 max-w-md w-full relative">
               {sevarpItems.map((item, i) => (
                 <div key={i} className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4">
                   <span className="text-gold font-heading font-bold text-sm sm:text-lg">{item.letter}</span>
                   <span className="text-cream font-body text-[10px] sm:text-sm"> - {item.label}</span>
                 </div>
               ))}
+
+              {/* Arrow circle centered between Värde/Affär row */}
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                <ArrowCircle />
+              </div>
             </div>
           </div>
 
-          {/* Flow line: Deras värld → Ditt värde → Ditt beslut */}
-          <div className="flex items-center justify-center gap-2 sm:gap-4 mb-6 sm:mb-8">
-            <span className="bg-gold/20 border border-gold/50 rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 text-cream font-body text-[10px] sm:text-sm font-semibold text-center">
+          {/* Flow: Deras värld → Ditt värde → Ditt beslut */}
+          <div className="flex flex-col items-center gap-3 sm:gap-0 sm:flex-row sm:justify-center sm:gap-4 mb-6 sm:mb-8">
+            <span className="bg-gold/20 border border-gold/50 rounded-lg px-5 py-2 sm:px-6 sm:py-2.5 text-cream font-heading text-sm sm:text-base font-bold text-center">
               Deras värld
             </span>
-            <svg className="w-5 h-3 sm:w-8 sm:h-4 text-gold flex-shrink-0" viewBox="0 0 32 16" fill="none">
-              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg className="w-4 h-6 sm:w-8 sm:h-4 text-gold flex-shrink-0 rotate-90 sm:rotate-0" viewBox="0 0 32 16" fill="none">
+              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="bg-gold/20 border border-gold/50 rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 text-cream font-body text-[10px] sm:text-sm font-semibold text-center">
+            <span className="bg-gold/20 border border-gold/50 rounded-lg px-5 py-2 sm:px-6 sm:py-2.5 text-cream font-heading text-sm sm:text-base font-bold text-center">
               Ditt värde
             </span>
-            <svg className="w-5 h-3 sm:w-8 sm:h-4 text-gold flex-shrink-0" viewBox="0 0 32 16" fill="none">
-              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg className="w-4 h-6 sm:w-8 sm:h-4 text-gold flex-shrink-0 rotate-90 sm:rotate-0" viewBox="0 0 32 16" fill="none">
+              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="bg-gold/20 border border-gold/50 rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 text-cream font-body text-[10px] sm:text-sm font-semibold text-center">
+            <span className="bg-gold/20 border border-gold/50 rounded-lg px-5 py-2 sm:px-6 sm:py-2.5 text-cream font-heading text-sm sm:text-base font-bold text-center">
               Ditt beslut
             </span>
           </div>
 
           <div className="bg-cream/10 border border-gold/40 rounded-lg p-3 sm:p-4 max-w-xl mx-auto text-center">
-            <p className="text-cream font-body text-[10px] sm:text-sm italic">
+            <p className="text-cream font-body text-xs sm:text-sm italic">
               Istället för att fokusera på avslut i stunden, skapar jag affärer som bygger på förståelse, förtroende och långsiktighet.
             </p>
           </div>
