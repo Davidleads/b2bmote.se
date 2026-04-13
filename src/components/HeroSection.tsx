@@ -32,6 +32,9 @@ const HeroSection = () => {
               👉 Boka gratis möte
             </a>
           </div>
+          <p className="text-cream/60 font-body text-[10px] sm:text-xs">
+            Tider: Tis–tors 09:00–17:00 • Fre 09:00–15:30
+          </p>
         </div>
 
         {/* Bottom: original content */}
