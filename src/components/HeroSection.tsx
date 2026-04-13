@@ -46,8 +46,13 @@ const HeroSection = () => {
             Jag säljer inte bara möten – jag driver affärer.
           </div>
           <div className="block">
-            <a href="#contact" className="cta-box inline-flex items-center gap-2 text-xs sm:text-sm">
-              Boka ett kostnadsfritt möte <span>→</span>
+            <a 
+              href="https://calendly.com/davidsealdeal/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-box inline-flex items-center text-xs sm:text-sm"
+            >
+              Boka ett kostnadsfritt möte
             </a>
           </div>
         </div>
