@@ -42,9 +42,9 @@ const HeroSection = () => {
           <p className="text-cream/80 font-body text-xs sm:text-sm md:text-base leading-relaxed max-w-xl mx-auto">
             Jag hjälper er att förstå kundens verkliga behov och omvandla möten till affärer – genom att säkerställa att ni pratar om rätt saker, med rätt kunder, vid rätt tillfälle.
           </p>
-          <div className="cta-box-outline inline-block text-xs sm:text-sm">
+          <p className="font-heading text-gold text-sm sm:text-base font-bold">
             Jag säljer inte bara möten – jag driver affärer.
-          </div>
+          </p>
           <div className="block">
             <a 
               href="https://calendly.com/davidsealdeal/30min"
