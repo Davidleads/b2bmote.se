@@ -1,4 +1,4 @@
-import { Search, Settings, PiggyBank, ShieldCheck, Handshake } from "lucide-react";
+import { Search, Settings, PiggyBank, ShieldCheck, Handshake, Calendar } from "lucide-react";
 
 const sevarpItems = [
   { letter: "S", label: "Situation" },
@@ -130,7 +130,13 @@ const SevarpSection = () => {
             </div>
             <div className="flex flex-col items-center gap-2 sm:gap-3">
               <span className="font-body text-xs sm:text-sm text-foreground text-center">Vill ni göra det enklare för kunden att säga ja – då bör vi prata.</span>
-              <a href="#contact" className="cta-box text-xs sm:text-sm">
+              <a 
+                href="https://calendly.com/davidsealdeal/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-box inline-flex items-center gap-2 text-xs sm:text-sm"
+              >
+                <Calendar className="w-4 h-4" />
                 Boka ett möte och se hur det fungerar i praktiken
               </a>
             </div>
