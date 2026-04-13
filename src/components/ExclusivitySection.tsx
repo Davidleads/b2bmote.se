@@ -22,8 +22,9 @@ const ExclusivitySection = () => {
           <span className="text-gold">Nästa steg:</span> Boka ett möte så visar jag exakt var ni tappar affärer – och hur vi fixar det.
         </h2>
 
-        <a href="mailto:davidseeds@outlook.com" className="cta-box inline-block text-xs sm:text-base">
-          Boka ett möte →
+        <a href="mailto:davidseeds@outlook.com" className="cta-box inline-flex items-center gap-2 text-xs sm:text-base">
+          <Mail className="w-4 h-4" />
+          Skriv till mig direkt
         </a>
 
         <div className="gold-divider max-w-xl mx-auto mt-6 sm:mt-10" />
