@@ -1,3 +1,4 @@
+import { Calendar } from "lucide-react";
 import heroArrow from "@/assets/hero-arrow.jpg";
 
 const HeroSection = () => {
@@ -29,7 +30,8 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="cta-box inline-flex items-center gap-2 text-xs sm:text-sm"
             >
-              👉 Boka gratis möte
+              <Calendar className="w-4 h-4" />
+              Boka gratis möte
             </a>
           </div>
           <p className="text-cream/60 font-body text-[10px] sm:text-xs">
