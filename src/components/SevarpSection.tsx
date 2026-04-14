@@ -10,11 +10,11 @@ const sevarpItems = [
 ];
 
 const steps = [
-  { Icon: Search, text: "Förstå er kund och situation" },
-  { Icon: Settings, text: "Identifiera vad som faktiskt driver beslut" },
-  { Icon: PiggyBank, text: "Koppla ert erbjudande till affärsvärde" },
-  { Icon: ShieldCheck, text: "Eliminera tvekan och risk" },
-  { Icon: Handshake, text: "Stäng affären och bygg långsiktighet" },
+  { Icon: Search, text: "Situation – Förståelse för kundens nuvarande verklighet." },
+  { Icon: Settings, text: "Effekt – Identifiering av vad som faktiskt driver beslutet." },
+  { Icon: PiggyBank, text: "Värde – Koppling mellan ert erbjudande och kundens affärsnytta." },
+  { Icon: ShieldCheck, text: "Affär – Eliminering av tvekan och risk." },
+  { Icon: Handshake, text: "Risk & Partnerskap – Långsiktig trygghet och avslut." },
 ];
 
 const ArrowCircle = () => (
@@ -54,10 +54,10 @@ const SevarpSection = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="card-navy-bordered p-5 sm:p-8 md:p-12 mb-12 sm:mb-16">
           <h2 className="font-heading font-bold text-xl sm:text-2xl md:text-4xl text-cream text-center mb-3 sm:mb-4">
-            En strukturerad modell för att driva affärer
+            SEVARP-modellen: En strukturerad metod för säljframgång
           </h2>
           <p className="text-cream text-center font-body text-xs sm:text-sm md:text-base max-w-2xl mx-auto mb-6 sm:mb-10">
-            Jag arbetar med en egenutvecklad affärsmodell för att förstå kundens verklighet på djupet och säkerställa att varje dialog leder mot en relevant och hållbar affär.
+            För att säkerställa att varje dialog leder mot en hållbar affär används den egenutvecklade SEVARP-modellen. Det är en metodik som går på djupet i kundens värld:
           </p>
 
           <div className="flex justify-center mb-6 sm:mb-8">
@@ -97,7 +97,7 @@ const SevarpSection = () => {
 
           <div className="bg-cream/10 border border-gold/40 rounded-lg p-3 sm:p-4 max-w-xl mx-auto text-center">
             <p className="text-cream font-body text-xs sm:text-sm italic">
-              Istället för att fokusera på avslut i stunden, skapar jag affärer som bygger på förståelse, förtroende och långsiktighet.
+              Resultatet? En säljprocess som bygger på logik, känsla och förtroende.
             </p>
           </div>
         </div>
