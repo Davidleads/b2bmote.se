@@ -2,18 +2,18 @@ import { CalendarCheck, Target, DollarSign } from "lucide-react";
 
 const painPoints = [
   {
-    problem: "Ni har möten – men de leder inte till affärer",
-    solution: "Tillsammans ser vi till att varje möte har rätt fokus och driver affären framåt",
+    problem: "Möten som inte leder till avslut",
+    solution: "Vi implementerar en struktur där varje möte har ett tydligt fokus och driver affärsprocessen framåt.",
     icon: CalendarCheck,
   },
   {
-    problem: "Ni har leads – men de konverterar inte",
-    solution: "Vi skärper dialogen så att rätt leads faktiskt blir kunder – inte bara namn i en lista",
+    problem: "Leads som inte konverterar",
+    solution: "Vi skärper säljdialogen så att era leads blir faktiska kunder, inte bara namn i ett CRM-system.",
     icon: Target,
   },
   {
-    problem: "Ni har ett erbjudande – men kunden tvekar",
-    solution: "Vi bygger affärer som kunden känner sig trygg att säga ja till – och som håller på sikt",
+    problem: "Kunder som tvekar trots ett starkt erbjudande",
+    solution: "Vi bygger det förtroende och det mervärde som krävs för att kunden ska våga säga ja.",
     icon: DollarSign,
   },
 ];
