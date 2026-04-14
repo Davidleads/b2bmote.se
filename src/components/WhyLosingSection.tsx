@@ -33,3 +33,5 @@ const WhyLosingSection = () => {
     </section>
   );
 };
+
+export default WhyLosingSection;
