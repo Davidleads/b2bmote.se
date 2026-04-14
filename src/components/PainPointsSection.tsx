@@ -23,7 +23,7 @@ const PainPointsSection = () => {
     <section className="section-cream py-12 sm:py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-navy mb-8 sm:mb-12">
-          Känner ni igen er?
+          Känner ni igen utmaningarna?
         </h2>
         <div className="space-y-4 sm:space-y-6">
           {painPoints.map((item, i) => (
