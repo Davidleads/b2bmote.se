@@ -36,10 +36,10 @@ const HeroSection = () => {
         {/* Bottom: original content */}
         <div className="text-center space-y-4 sm:space-y-6 max-w-3xl mx-auto border-t border-cream/10 pt-8 sm:pt-10">
           <p className="font-heading text-gold text-sm sm:text-lg md:text-xl font-bold">
-            Öka er träffsäkerhet och stäng fler affärer – utan att jaga fler leads
+            Öka träffsäkerheten och konvertera fler leads till kunder
           </p>
           <p className="text-cream/80 font-body text-xs sm:text-sm md:text-base leading-relaxed max-w-xl mx-auto">
-            Jag hjälper er att förstå kundens verkliga behov och omvandla möten till affärer – genom att säkerställa att ni pratar om rätt saker, med rätt kunder, vid rätt tillfälle.
+            Många B2B-bolag jagar ständigt nya leads, men missar affärer på grund av bristande relevans i dialogen. Genom att förstå kundens verkliga behov omvandlas era möten till lönsamma kontrakt. Vi säkerställer att ni pratar om rätt saker, med rätt beslutsfattare, vid rätt tillfälle.
           </p>
         </div>
       </div>
