@@ -3,25 +3,23 @@ import { BarChart3, TrendingUp, FileText } from "lucide-react";
 const cards = [
   {
     icon: BarChart3,
-    title: "Datainsamling & Analys",
+    title: "CRM-integration",
     texts: [
-      "Använd verktyg för webbanalys, kundfeedback och CRM-system för att samla in och analysera data om hur kunder interagerar med ert varumärke.",
-      "Att använda data och kundinsikter för att förstå kunders preferenser och beteenden. Segmentera din målgrupp och skapa erbjudanden som speglar deras specifika behov.",
+      "Smidig hantering i Microsoft-miljö och befintliga system.",
     ],
   },
   {
     icon: TrendingUp,
-    title: "Kontinuerlig Optimering",
+    title: "Säljstöd",
     texts: [
-      "Denna insikt används för att kontinuerligt förbättra erbjudanden och försäljningsstrategier.",
+      "Optimering av säljmail, mötessummeringar och beslutsunderlag.",
     ],
   },
   {
     icon: FileText,
-    title: "Operativ Integration",
+    title: "Kontinuerlig optimering",
     texts: [
-      "Jag kan även hjälpa er med att skriva säljmail, summera kundsamtal, skapa offerter eller analysera data i era kalkylblad.",
-      "Integreras smidigt om ni kör Microsoft-miljö.",
+      "Insikter från verkliga kunddialoger används för att ständigt förbättra er säljstrategi.",
     ],
   },
 ];
@@ -30,9 +28,12 @@ const DataInsightSection = () => {
   return (
     <section className="section-cream py-12 sm:py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-navy mb-8 sm:mb-10">
-          Data, Insikt & Operativ Kraft
+        <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-navy mb-3 sm:mb-4">
+          Datadriven mötesbokning och operativ kraft
         </h2>
+        <p className="font-body text-xs sm:text-sm md:text-base text-foreground leading-relaxed max-w-3xl mb-8 sm:mb-10">
+          Maximera er effektivitet med stöd i det dagliga säljarbetet. Genom att använda data och kundinsikter segmenteras målgruppen för att skapa erbjudanden som speglar deras specifika behov.
+        </p>
         <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
           {cards.map((card, i) => (
             <div key={i} className="bg-cream-dark border-2 border-gold/30 rounded-xl overflow-hidden">

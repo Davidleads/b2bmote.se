@@ -10,19 +10,15 @@ const ExclusivitySection = () => {
             <span className="font-bold">EXKLUSIVITET:</span>
           </p>
           <p className="text-cream/80 font-body text-[10px] sm:text-sm leading-relaxed">
-            Kapacitet är en strategisk resurs. Jag arbetar endast med ett begränsat antal kunder samtidigt för att leverera maximal effekt. Därför är tillgänglighet alltid tidskänslig.
+            Kapaciteten är begränsad för att säkerställa maximal effekt och exklusivitet för varje uppdragsgivare. Att investera i kvalificerade möten är det snabbaste sättet att stärka er pipeline och öka avkastningen på er säljtid.
           </p>
         </div>
 
-        <p className="text-cream/80 font-body text-xs sm:text-base leading-relaxed max-w-2xl mx-auto">
-          Att lägga tid och resurser på kvalificerade möten är en investering som stärker er pipeline och ger fler affärer att stänga. På lång sikt handlar det om avkastning på tiden ni lägger idag.
-        </p>
-
         <h2 className="font-heading font-bold text-lg sm:text-2xl md:text-3xl text-cream leading-snug max-w-2xl mx-auto">
-          <span className="text-gold">Nästa steg:</span> Boka ett möte så visar jag exakt var ni tappar affärer – och hur vi fixar det.
+          <span className="text-gold">Nästa steg:</span> Boka ett kort möte för att identifiera var ni har störst potential att öka er försäljning.
         </h2>
 
-        <a href="mailto:davidseeds@outlook.com" className="cta-box inline-flex items-center gap-2 text-xs sm:text-base">
+        <a href="mailto:davidsealdeal@gmail.com" className="cta-box inline-flex items-center gap-2 text-xs sm:text-base">
           <Mail className="w-4 h-4" />
           Skriv till mig direkt
         </a>
@@ -39,7 +35,7 @@ const ExclusivitySection = () => {
           </div>
           <div className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm">
             <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
-            <span>davidseeds@outlook.com</span>
+            <span>davidsealdeal@gmail.com</span>
           </div>
           <div className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm">
             <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
