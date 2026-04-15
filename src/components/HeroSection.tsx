@@ -28,7 +28,7 @@ const HeroSection = () => {
               className="cta-box inline-flex items-center gap-2 text-xs sm:text-sm"
             >
               <Calendar className="w-4 h-4" />
-              Boka ett kostnadsfritt strategimöte
+              Boka ett strategisamtal
             </a>
           </div>
         </div>
@@ -39,7 +39,7 @@ const HeroSection = () => {
             Öka träffsäkerheten och konvertera fler leads till kunder
           </p>
           <p className="text-cream/80 font-body text-xs sm:text-sm md:text-base leading-relaxed max-w-xl mx-auto">
-            Många B2B-bolag jagar ständigt nya leads, men missar affärer på grund av bristande relevans i dialogen. Genom att förstå kundens verkliga behov omvandlas era möten till lönsamma kontrakt. Vi säkerställer att ni pratar om rätt saker, med rätt beslutsfattare, vid rätt tillfälle.
+            Relevans vinner över volym. Jag identifierar kundens verkliga drivkrafter så att ni pratar om rätt saker vid rätt tillfälle – och säkrar affären hela vägen till signat avtal.
           </p>
         </div>
       </div>

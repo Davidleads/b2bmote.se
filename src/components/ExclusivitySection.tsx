@@ -18,9 +18,14 @@ const ExclusivitySection = () => {
           <span className="text-gold">Nästa steg:</span> Boka ett kort möte för att identifiera var ni har störst potential att öka er försäljning.
         </h2>
 
-        <a href="mailto:davidsealdeal@gmail.com" className="cta-box inline-flex items-center gap-2 text-xs sm:text-base">
+        <a
+          href="https://calendly.com/davidsealdeal/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-box inline-flex items-center gap-2 text-xs sm:text-base"
+        >
           <Mail className="w-4 h-4" />
-          Skriv till mig direkt
+          Boka ett strategisamtal
         </a>
 
         <div className="gold-divider max-w-xl mx-auto mt-6 sm:mt-10" />
