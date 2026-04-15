@@ -1,162 +1,94 @@
 import { Search, Settings, PiggyBank, ShieldCheck, Handshake, Calendar } from "lucide-react";
 
-const sevarpItems = [
-  { letter: "S", label: "Situation", desc: "Kartläggning av kundens nuvarande verklighet." },
-  { letter: "E", label: "Effekt", desc: "Identifiering av de faktiska drivkrafterna bakom beslutet." },
-  { letter: "V", label: "Värde", desc: "Koppling mellan erbjudandet och kundens affärsnytta." },
-  { letter: "A", label: "Affär", desc: "Eliminering av hinder för en tydlig väg framåt." },
-  { letter: "R", label: "Risk", desc: "Hantering av osäkerhet för att skapa trygghet." },
-  { letter: "P", label: "Partnerskap", desc: "Grunden för en långsiktig och lönsam relation." },
-];
-
-const steps = [
-  { Icon: Search, text: "Situation – Kartläggning av kundens nuvarande verklighet." },
-  { Icon: Settings, text: "Effekt – Identifiering av de faktiska drivkrafterna bakom beslutet." },
-  { Icon: PiggyBank, text: "Värde – Koppling mellan erbjudandet och kundens affärsnytta." },
-  { Icon: ShieldCheck, text: "Affär – Eliminering av hinder för en tydlig väg framåt." },
-  { Icon: Handshake, text: "Risk & Partnerskap – Hantering av osäkerhet och grund för långsiktig relation." },
-];
-
-const ArrowCircle = () => (
-  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-2 border-gold bg-navy-light flex items-center justify-center">
-    <svg className="w-7 h-7 sm:w-9 sm:h-9 text-gold" viewBox="0 0 40 40" fill="none">
-      {/* Up */}
-      <path d="M20 4l-4 5h8l-4-5z" fill="currentColor"/>
-      <line x1="20" y1="9" x2="20" y2="17" stroke="currentColor" strokeWidth="1.5"/>
-      {/* Down */}
-      <path d="M20 36l-4-5h8l-4 5z" fill="currentColor"/>
-      <line x1="20" y1="31" x2="20" y2="23" stroke="currentColor" strokeWidth="1.5"/>
-      {/* Left */}
-      <path d="M4 20l5-4v8l-5-4z" fill="currentColor"/>
-      <line x1="9" y1="20" x2="17" y2="20" stroke="currentColor" strokeWidth="1.5"/>
-      {/* Right */}
-      <path d="M36 20l-5-4v8l5-4z" fill="currentColor"/>
-      <line x1="31" y1="20" x2="23" y2="20" stroke="currentColor" strokeWidth="1.5"/>
-      {/* Diag top-left */}
-      <path d="M8 8l1 5-5-1 4-4z" fill="currentColor"/>
-      <line x1="11" y1="11" x2="16" y2="16" stroke="currentColor" strokeWidth="1.2"/>
-      {/* Diag top-right */}
-      <path d="M32 8l-1 5 5-1-4-4z" fill="currentColor"/>
-      <line x1="29" y1="11" x2="24" y2="16" stroke="currentColor" strokeWidth="1.2"/>
-      {/* Diag bottom-left */}
-      <path d="M8 32l1-5-5 1 4 4z" fill="currentColor"/>
-      <line x1="11" y1="29" x2="16" y2="24" stroke="currentColor" strokeWidth="1.2"/>
-      {/* Diag bottom-right */}
-      <path d="M32 32l-1-5 5 1-4 4z" fill="currentColor"/>
-      <line x1="29" y1="29" x2="24" y2="24" stroke="currentColor" strokeWidth="1.2"/>
-    </svg>
-  </div>
-);
-
 const SevarpSection = () => {
   return (
     <section className="section-cream py-12 sm:py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="card-navy-bordered p-5 sm:p-8 md:p-12 mb-12 sm:mb-16">
+        <div className="card-navy-bordered p-5 sm:p-8 md:p-12">
+          <h3 className="font-heading font-bold text-lg sm:text-2xl md:text-3xl text-cream mb-2 text-center">
+            SEVARP-modellen
+          </h3>
+          <p className="font-body text-xs sm:text-base text-cream/70 mb-8 sm:mb-12 text-center">
+            En strukturerad metod för att driva affärer från första kontakt till avslut:
+          </p>
 
-
-          <div className="flex justify-center mb-6 sm:mb-8">
-            <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-2xl w-full">
-              {/* Deras värld: S + E */}
-              <div className="flex flex-col items-center gap-2">
-                <span className="text-gold font-heading font-bold text-[10px] sm:text-sm uppercase tracking-wider">Deras värld</span>
-                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
-                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">S</span>
-                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Situation</span>
-                </div>
-                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
-                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">E</span>
-                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Effekt</span>
-                </div>
-              </div>
-
-              {/* Ditt värde: V + A */}
-              <div className="flex flex-col items-center gap-2 relative">
-                <span className="text-gold font-heading font-bold text-[10px] sm:text-sm uppercase tracking-wider">Ditt värde</span>
-                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
-                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">V</span>
-                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Värde</span>
-                </div>
-                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
-                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">A</span>
-                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Affär</span>
-                </div>
-                {/* Arrow circle centered */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/4 z-10">
-                  <ArrowCircle />
-                </div>
-              </div>
-
-              {/* Till beslut: R + P */}
-              <div className="flex flex-col items-center gap-2">
-                <span className="text-gold font-heading font-bold text-[10px] sm:text-sm uppercase tracking-wider">Till beslut</span>
-                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
-                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">R</span>
-                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Risk</span>
-                </div>
-                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
-                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">P</span>
-                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Partnerskap</span>
-                </div>
-              </div>
+          {/* Group labels */}
+          <div className="grid grid-cols-3 mb-2 sm:mb-3 max-w-3xl mx-auto">
+            <div className="col-span-1 text-center">
+              <span className="text-gold font-heading font-bold text-[10px] sm:text-sm uppercase tracking-wider">Deras värld</span>
+            </div>
+            <div className="col-span-1 text-center">
+              <span className="text-gold font-heading font-bold text-[10px] sm:text-sm uppercase tracking-wider">Ditt värde</span>
+            </div>
+            <div className="col-span-1 text-center">
+              <span className="text-gold font-heading font-bold text-[10px] sm:text-sm uppercase tracking-wider">Till beslut</span>
             </div>
           </div>
 
-          {/* Flow arrows */}
-          <div className="flex flex-row items-center justify-center gap-1 sm:gap-3 mb-6 sm:mb-8">
-            <span className="bg-gold/20 border border-gold/50 rounded-lg px-2 py-1.5 sm:px-5 sm:py-2.5 text-cream font-heading text-[10px] sm:text-base font-bold text-center whitespace-nowrap">
-              Deras värld
-            </span>
-            <svg className="w-4 h-3 sm:w-8 sm:h-4 text-gold flex-shrink-0" viewBox="0 0 32 16" fill="none">
-              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            <span className="bg-gold/20 border border-gold/50 rounded-lg px-2 py-1.5 sm:px-5 sm:py-2.5 text-cream font-heading text-[10px] sm:text-base font-bold text-center whitespace-nowrap">
-              Ditt värde
-            </span>
-            <svg className="w-4 h-3 sm:w-8 sm:h-4 text-gold flex-shrink-0" viewBox="0 0 32 16" fill="none">
-              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            <span className="bg-gold/20 border border-gold/50 rounded-lg px-2 py-1.5 sm:px-5 sm:py-2.5 text-cream font-heading text-[10px] sm:text-base font-bold text-center whitespace-nowrap">
-              Till beslut
-            </span>
+          {/* 5 steps in a row with connecting line */}
+          <div className="grid grid-cols-5 gap-1 sm:gap-4 mb-8 sm:mb-12 relative max-w-3xl mx-auto">
+            {/* Connecting line */}
+            <div className="absolute top-[1rem] sm:top-[1.5rem] left-[10%] right-[10%] h-0.5 bg-gold/40" style={{ zIndex: 0 }} />
+
+            {/* S */}
+            <div className="flex flex-col items-center text-center relative z-10">
+              <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-navy-light border-2 border-gold flex items-center justify-center mb-1 sm:mb-3">
+                <Search className="w-4 h-4 sm:w-6 sm:h-6 text-gold" />
+              </div>
+              <span className="text-gold font-heading font-bold text-xs sm:text-base mb-0.5">S</span>
+              <p className="font-body text-[8px] sm:text-xs text-cream/80">Situation – Kartläggning av kundens nuvarande verklighet.</p>
+            </div>
+
+            {/* E */}
+            <div className="flex flex-col items-center text-center relative z-10">
+              <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-navy-light border-2 border-gold flex items-center justify-center mb-1 sm:mb-3">
+                <Settings className="w-4 h-4 sm:w-6 sm:h-6 text-gold" />
+              </div>
+              <span className="text-gold font-heading font-bold text-xs sm:text-base mb-0.5">E</span>
+              <p className="font-body text-[8px] sm:text-xs text-cream/80">Effekt – Identifiering av de faktiska drivkrafterna.</p>
+            </div>
+
+            {/* V */}
+            <div className="flex flex-col items-center text-center relative z-10">
+              <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-navy-light border-2 border-gold flex items-center justify-center mb-1 sm:mb-3">
+                <PiggyBank className="w-4 h-4 sm:w-6 sm:h-6 text-gold" />
+              </div>
+              <span className="text-gold font-heading font-bold text-xs sm:text-base mb-0.5">V</span>
+              <p className="font-body text-[8px] sm:text-xs text-cream/80">Värde – Koppling till kundens affärsnytta.</p>
+            </div>
+
+            {/* A */}
+            <div className="flex flex-col items-center text-center relative z-10">
+              <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-navy-light border-2 border-gold flex items-center justify-center mb-1 sm:mb-3">
+                <ShieldCheck className="w-4 h-4 sm:w-6 sm:h-6 text-gold" />
+              </div>
+              <span className="text-gold font-heading font-bold text-xs sm:text-base mb-0.5">A</span>
+              <p className="font-body text-[8px] sm:text-xs text-cream/80">Affär – Eliminering av hinder för vägen framåt.</p>
+            </div>
+
+            {/* R+P */}
+            <div className="flex flex-col items-center text-center relative z-10">
+              <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-navy-light border-2 border-gold flex items-center justify-center mb-1 sm:mb-3">
+                <Handshake className="w-4 h-4 sm:w-6 sm:h-6 text-gold" />
+              </div>
+              <span className="text-gold font-heading font-bold text-xs sm:text-base mb-0.5">R & P</span>
+              <p className="font-body text-[8px] sm:text-xs text-cream/80">Risk & Partnerskap – Trygghet och långsiktig relation.</p>
+            </div>
           </div>
 
           {/* Callout box */}
-          <div className="bg-gold/15 border-2 border-gold rounded-lg p-4 sm:p-6 max-w-xl mx-auto text-center">
+          <div className="bg-gold/15 border-2 border-gold rounded-lg p-4 sm:p-6 max-w-xl mx-auto text-center mb-6 sm:mb-8">
             <p className="text-cream font-heading text-sm sm:text-lg font-bold">
               Resultatet? En säljprocess som bygger på logik, känsla och förtroende.
             </p>
           </div>
-        </div>
-
-        <div className="bg-cream-dark border-2 border-gold/30 rounded-xl p-5 sm:p-8 md:p-12">
-          <h3 className="font-heading font-bold text-lg sm:text-2xl md:text-3xl text-navy mb-2">
-            <Settings className="inline w-5 h-5 sm:w-7 sm:h-7 text-gold mr-2 -mt-1" />
-            HUR DET FUNKAR <span className="font-body text-sm sm:text-lg font-normal">(Förenklad SEVARP)</span>
-          </h3>
-          <p className="font-body text-xs sm:text-base text-foreground mb-6 sm:mb-10">
-            Jag jobbar med en strukturerad metod för att driva affärer från första kontakt till avslut:
-          </p>
-
-          <div className="grid grid-cols-5 gap-1 sm:gap-4 mb-6 sm:mb-10 relative">
-            {steps.map((step, i) => (
-              <div key={i} className="flex flex-col items-center text-center relative z-10">
-                <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-navy border-2 border-gold flex items-center justify-center mb-1 sm:mb-3">
-                  <step.Icon className="w-4 h-4 sm:w-6 sm:h-6 text-gold" />
-                </div>
-                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-navy border-2 border-gold rounded-sm mb-1 sm:mb-2" />
-                <p className="font-body text-[8px] sm:text-xs md:text-sm text-foreground">{step.text}</p>
-              </div>
-            ))}
-            <div className="absolute top-[1.2rem] sm:top-[1.8rem] left-[10%] right-[10%] h-0.5 bg-navy" style={{ zIndex: 0 }} />
-          </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
-            <div className="bg-navy rounded-full px-4 sm:px-6 py-1.5 sm:py-2 text-gold font-body text-[10px] sm:text-sm font-semibold">
+            <div className="bg-gold/20 rounded-full px-4 sm:px-6 py-1.5 sm:py-2 text-gold font-body text-[10px] sm:text-sm font-semibold border border-gold/50">
               Enkelt utåt – avancerat bakom.
             </div>
             <div className="flex flex-col items-center gap-2 sm:gap-3">
-              <span className="font-body text-xs sm:text-sm text-foreground text-center">Vill ni göra det enklare för kunden att säga ja – då bör vi prata.</span>
+              <span className="font-body text-xs sm:text-sm text-cream/80 text-center">Vill ni göra det enklare för kunden att säga ja – då bör vi prata.</span>
               <a 
                 href="https://calendly.com/davidsealdeal/30min"
                 target="_blank"
