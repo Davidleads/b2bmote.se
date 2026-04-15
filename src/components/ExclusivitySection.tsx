@@ -38,10 +38,10 @@ const ExclusivitySection = () => {
             <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
             <span>Helsingborg</span>
           </div>
-          <div className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm">
+          <a href="mailto:davidsealdeal@gmail.com" className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm hover:text-gold transition-colors">
             <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
             <span>davidsealdeal@gmail.com</span>
-          </div>
+          </a>
           <div className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm">
             <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
             <span>070-424 88 89</span>
