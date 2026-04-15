@@ -4,7 +4,7 @@ import WhyLosingSection from "@/components/WhyLosingSection";
 import SevarpSection from "@/components/SevarpSection";
 import NotOrdinarySection from "@/components/NotOrdinarySection";
 import DataInsightSection from "@/components/DataInsightSection";
-import AboutMeSection from "@/components/AboutMeSection";
+
 import ExclusivitySection from "@/components/ExclusivitySection";
 
 const Index = () => {

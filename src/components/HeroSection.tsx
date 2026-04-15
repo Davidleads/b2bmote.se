@@ -28,7 +28,7 @@ const HeroSection = () => {
               className="cta-box inline-flex items-center gap-2 text-xs sm:text-sm"
             >
               <Calendar className="w-4 h-4" />
-              Boka ett kostnadsfritt strategimöte
+              Boka ett strategisamtal
             </a>
           </div>
         </div>

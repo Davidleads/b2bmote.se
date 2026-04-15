@@ -1,20 +1,20 @@
 import { Search, Settings, PiggyBank, ShieldCheck, Handshake, Calendar } from "lucide-react";
 
 const sevarpItems = [
-  { letter: "S", label: "Situation" },
-  { letter: "E", label: "Effekt" },
-  { letter: "V", label: "Värde" },
-  { letter: "A", label: "Affär" },
-  { letter: "R", label: "Risk" },
-  { letter: "P", label: "Partnerskap" },
+  { letter: "S", label: "Situation", desc: "Kartläggning av kundens nuvarande verklighet." },
+  { letter: "E", label: "Effekt", desc: "Identifiering av de faktiska drivkrafterna bakom beslutet." },
+  { letter: "V", label: "Värde", desc: "Koppling mellan erbjudandet och kundens affärsnytta." },
+  { letter: "A", label: "Affär", desc: "Eliminering av hinder för en tydlig väg framåt." },
+  { letter: "R", label: "Risk", desc: "Hantering av osäkerhet för att skapa trygghet." },
+  { letter: "P", label: "Partnerskap", desc: "Grunden för en långsiktig och lönsam relation." },
 ];
 
 const steps = [
-  { Icon: Search, text: "Situation – Förståelse för kundens nuvarande verklighet." },
-  { Icon: Settings, text: "Effekt – Identifiering av vad som faktiskt driver beslutet." },
-  { Icon: PiggyBank, text: "Värde – Koppling mellan ert erbjudande och kundens affärsnytta." },
-  { Icon: ShieldCheck, text: "Affär – Eliminering av tvekan och risk." },
-  { Icon: Handshake, text: "Risk & Partnerskap – Långsiktig trygghet och avslut." },
+  { Icon: Search, text: "Situation – Kartläggning av kundens nuvarande verklighet." },
+  { Icon: Settings, text: "Effekt – Identifiering av de faktiska drivkrafterna bakom beslutet." },
+  { Icon: PiggyBank, text: "Värde – Koppling mellan erbjudandet och kundens affärsnytta." },
+  { Icon: ShieldCheck, text: "Affär – Eliminering av hinder för en tydlig väg framåt." },
+  { Icon: Handshake, text: "Risk & Partnerskap – Hantering av osäkerhet och grund för långsiktig relation." },
 ];
 
 const ArrowCircle = () => (
@@ -53,12 +53,7 @@ const SevarpSection = () => {
     <section className="section-cream py-12 sm:py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="card-navy-bordered p-5 sm:p-8 md:p-12 mb-12 sm:mb-16">
-          <h2 className="font-heading font-bold text-xl sm:text-2xl md:text-4xl text-cream text-center mb-3 sm:mb-4">
-            SEVARP-modellen: En strukturerad metod för säljframgång
-          </h2>
-          <p className="text-cream text-center font-body text-xs sm:text-sm md:text-base max-w-2xl mx-auto mb-6 sm:mb-10">
-            För att säkerställa att varje dialog leder mot en hållbar affär används den egenutvecklade SEVARP-modellen. Det är en metodik som går på djupet i kundens värld:
-          </p>
+
 
           <div className="flex justify-center mb-6 sm:mb-8">
             <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 max-w-md w-full relative">
@@ -137,7 +132,7 @@ const SevarpSection = () => {
                 className="cta-box inline-flex items-center gap-2 text-xs sm:text-sm"
               >
                 <Calendar className="w-4 h-4" />
-                Boka ett möte och se hur det fungerar i praktiken
+                Boka ett strategisamtal
               </a>
             </div>
           </div>
