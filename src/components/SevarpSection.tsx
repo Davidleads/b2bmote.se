@@ -56,22 +56,53 @@ const SevarpSection = () => {
 
 
           <div className="flex justify-center mb-6 sm:mb-8">
-            <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 max-w-md w-full relative">
-              {sevarpItems.map((item, i) => (
-                <div key={i} className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4">
-                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">{item.letter}</span>
-                  <span className="text-cream font-body text-[10px] sm:text-sm"> - {item.label}</span>
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-2xl w-full">
+              {/* Deras värld: S + E */}
+              <div className="flex flex-col items-center gap-2">
+                <span className="text-gold font-heading font-bold text-[10px] sm:text-sm uppercase tracking-wider">Deras värld</span>
+                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
+                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">S</span>
+                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Situation</span>
                 </div>
-              ))}
+                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
+                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">E</span>
+                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Effekt</span>
+                </div>
+              </div>
 
-              {/* Arrow circle centered between Värde/Affär row */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-                <ArrowCircle />
+              {/* Ditt värde: V + A */}
+              <div className="flex flex-col items-center gap-2 relative">
+                <span className="text-gold font-heading font-bold text-[10px] sm:text-sm uppercase tracking-wider">Ditt värde</span>
+                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
+                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">V</span>
+                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Värde</span>
+                </div>
+                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
+                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">A</span>
+                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Affär</span>
+                </div>
+                {/* Arrow circle centered */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/4 z-10">
+                  <ArrowCircle />
+                </div>
+              </div>
+
+              {/* Till beslut: R + P */}
+              <div className="flex flex-col items-center gap-2">
+                <span className="text-gold font-heading font-bold text-[10px] sm:text-sm uppercase tracking-wider">Till beslut</span>
+                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
+                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">R</span>
+                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Risk</span>
+                </div>
+                <div className="card-navy text-center border border-gold/50 py-2 sm:py-3 !p-2 sm:!p-4 w-full">
+                  <span className="text-gold font-heading font-bold text-sm sm:text-lg">P</span>
+                  <span className="text-cream font-body text-[10px] sm:text-sm"> - Partnerskap</span>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Flow: Deras värld → Ditt värde → Ditt beslut */}
+          {/* Flow arrows */}
           <div className="flex flex-row items-center justify-center gap-1 sm:gap-3 mb-6 sm:mb-8">
             <span className="bg-gold/20 border border-gold/50 rounded-lg px-2 py-1.5 sm:px-5 sm:py-2.5 text-cream font-heading text-[10px] sm:text-base font-bold text-center whitespace-nowrap">
               Deras värld
@@ -90,8 +121,9 @@ const SevarpSection = () => {
             </span>
           </div>
 
-          <div className="bg-cream/10 border border-gold/40 rounded-lg p-3 sm:p-4 max-w-xl mx-auto text-center">
-            <p className="text-cream font-body text-xs sm:text-sm italic">
+          {/* Callout box */}
+          <div className="bg-gold/15 border-2 border-gold rounded-lg p-4 sm:p-6 max-w-xl mx-auto text-center">
+            <p className="text-cream font-heading text-sm sm:text-lg font-bold">
               Resultatet? En säljprocess som bygger på logik, känsla och förtroende.
             </p>
           </div>
