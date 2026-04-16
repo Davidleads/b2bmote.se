@@ -49,10 +49,10 @@ const ExclusivitySection = () => {
             <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
             <span>davidsealdeal@gmail.com</span>
           </a>
-          <div className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm">
+          <a href="tel:+46704248889" className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm hover:text-gold transition-colors">
             <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
             <span>070-424 88 89</span>
-          </div>
+          </a>
           <a
             href="https://www.linkedin.com/in/david-sheikh-7bb8a2319"
             target="_blank"
