@@ -52,17 +52,6 @@ const SevarpSection = () => {
   return (
     <section className="section-cream py-12 sm:py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="card-navy-bordered p-5 sm:p-8 md:p-12 mb-12 sm:mb-16">
-
-
-          {/* Callout box */}
-          <div className="bg-gold/15 border-2 border-gold rounded-lg p-4 sm:p-6 max-w-xl mx-auto text-center">
-            <p className="text-cream font-heading text-sm sm:text-lg font-bold">
-              Resultatet? En säljprocess som bygger på logik, känsla och förtroende.
-            </p>
-          </div>
-        </div>
-
         <div className="bg-cream-dark border-2 border-gold/30 rounded-xl p-5 sm:p-8 md:p-12">
           <h3 className="font-heading font-bold text-lg sm:text-2xl md:text-3xl text-navy mb-2">
             <Settings className="inline w-5 h-5 sm:w-7 sm:h-7 text-gold mr-2 -mt-1" />
@@ -101,6 +90,13 @@ const SevarpSection = () => {
                 Boka ett strategisamtal
               </a>
             </div>
+          </div>
+
+          {/* Callout box */}
+          <div className="bg-gold/15 border-2 border-gold rounded-lg p-4 sm:p-6 max-w-xl mx-auto text-center mt-6 sm:mt-10">
+            <p className="text-navy font-heading text-sm sm:text-lg font-bold">
+              Resultatet? En säljprocess som bygger på logik, känsla och förtroende.
+            </p>
           </div>
         </div>
       </div>
