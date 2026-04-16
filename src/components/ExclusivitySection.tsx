@@ -28,6 +28,13 @@ const ExclusivitySection = () => {
           Boka ett strategisamtal
         </a>
 
+        <div className="mt-6 sm:mt-10 space-y-3">
+          <h3 className="font-heading font-bold text-lg sm:text-2xl text-gold">Kontakta mig</h3>
+          <p className="text-cream/80 font-body text-xs sm:text-sm">
+            Ring, mejla eller boka en tid i kalendern så tar vi det därifrån.
+          </p>
+        </div>
+
         <div className="gold-divider max-w-xl mx-auto mt-6 sm:mt-10" />
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10 pt-4">
           <div className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm">
@@ -42,10 +49,10 @@ const ExclusivitySection = () => {
             <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
             <span>davidsealdeal@gmail.com</span>
           </a>
-          <div className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm">
+          <a href="tel:+46704248889" className="flex items-center gap-1.5 sm:gap-2 text-cream/80 font-body text-[10px] sm:text-sm hover:text-gold transition-colors">
             <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
             <span>070-424 88 89</span>
-          </div>
+          </a>
           <a
             href="https://www.linkedin.com/in/david-sheikh-7bb8a2319"
             target="_blank"
