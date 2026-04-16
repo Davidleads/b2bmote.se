@@ -61,6 +61,25 @@ const SevarpSection = () => {
             Jag jobbar med en strukturerad metod för att driva affärer från första kontakt till avslut:
           </p>
 
+          {/* Better approach: 3-column group header row above 5-col icons */}
+          <div className="flex items-center justify-center gap-1 sm:gap-3 mb-3 sm:mb-5">
+            <span className="bg-gold/20 border border-gold/50 rounded-lg px-2 py-1 sm:px-4 sm:py-2 text-navy font-heading text-[9px] sm:text-xs md:text-sm font-bold uppercase tracking-wider">
+              Deras värld
+            </span>
+            <svg className="w-4 h-3 sm:w-6 sm:h-4 text-gold flex-shrink-0" viewBox="0 0 32 16" fill="none">
+              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span className="bg-gold/20 border border-gold/50 rounded-lg px-2 py-1 sm:px-4 sm:py-2 text-navy font-heading text-[9px] sm:text-xs md:text-sm font-bold uppercase tracking-wider">
+              Ditt värde
+            </span>
+            <svg className="w-4 h-3 sm:w-6 sm:h-4 text-gold flex-shrink-0" viewBox="0 0 32 16" fill="none">
+              <path d="M0 8h28m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span className="bg-gold/20 border border-gold/50 rounded-lg px-2 py-1 sm:px-4 sm:py-2 text-navy font-heading text-[9px] sm:text-xs md:text-sm font-bold uppercase tracking-wider">
+              Till beslut
+            </span>
+          </div>
+
           <div className="grid grid-cols-5 gap-1 sm:gap-4 mb-6 sm:mb-10 relative">
             {steps.map((step, i) => (
               <div key={i} className="flex flex-col items-center text-center relative z-10">
