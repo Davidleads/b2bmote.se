@@ -18,9 +18,6 @@ const HeroSection = () => {
 
         {/* Middle: subtitle + proof + CTA */}
         <div className="text-center space-y-4 sm:space-y-6 max-w-3xl mx-auto">
-          <p className="font-heading text-gold text-sm sm:text-lg md:text-xl font-bold">
-            Få ett snitt på 3–8 kvalificerade möten per vecka och fokusera på det ni gör bäst: att stänga affärer.
-          </p>
           <div className="block">
             <a
               href="https://calendly.com/davidsealdeal/30min"
@@ -32,6 +29,9 @@ const HeroSection = () => {
               Boka ett strategisamtal
             </a>
           </div>
+          <p className="font-heading text-gold text-sm sm:text-lg md:text-xl font-bold">
+            Få ett snitt på 3–8 kvalificerade möten per vecka och fokusera på det ni gör bäst: att stänga affärer.
+          </p>
           {/* Logo under CTA */}
           <div className="flex justify-center pt-2">
             <img src={logo} alt="B2Bmote.se" className="h-12 sm:h-16 md:h-20 w-auto" />
