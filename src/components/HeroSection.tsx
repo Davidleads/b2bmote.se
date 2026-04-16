@@ -1,10 +1,15 @@
 import { Calendar } from "lucide-react";
 import heroArrow from "@/assets/hero-arrow.jpg";
+import logo from "@/assets/logo-b2bmote.png";
 
 const HeroSection = () => {
   return (
     <section className="section-navy relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24 space-y-8 sm:space-y-10">
+        {/* Logo */}
+        <div className="flex justify-center">
+          <img src={logo} alt="B2Bmote.se" className="h-12 sm:h-16 md:h-20 w-auto" />
+        </div>
         {/* Top: H1 with arrow image to the right */}
         <div className="grid grid-cols-[1fr_auto] gap-4 sm:gap-8 items-center">
           <h1 className="font-heading font-900 text-2xl sm:text-4xl lg:text-6xl leading-tight text-cream">
