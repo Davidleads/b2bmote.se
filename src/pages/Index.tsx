@@ -1,3 +1,5 @@
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import HeroSection from "@/components/HeroSection";
 import PainPointsSection from "@/components/PainPointsSection";
 import WhyLosingSection from "@/components/WhyLosingSection";
@@ -9,16 +11,20 @@ import ExclusivitySection from "@/components/ExclusivitySection";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
-      <HeroSection />
-      <PainPointsSection />
-      <WhyLosingSection />
-      <SevarpSection />
-      <NotOrdinarySection />
-      <DataInsightSection />
-      <AboutMeSection />
-      <ExclusivitySection />
-    </main>
+    <>
+      <SiteHeader />
+      <main id="top" className="min-h-screen">
+        <HeroSection />
+        <section id="utmaningar"><PainPointsSection /></section>
+        <WhyLosingSection />
+        <section id="metod"><SevarpSection /></section>
+        <NotOrdinarySection />
+        <section id="insikter"><DataInsightSection /></section>
+        <section id="om-mig"><AboutMeSection /></section>
+        <ExclusivitySection />
+      </main>
+      <SiteFooter />
+    </>
   );
 };
 
