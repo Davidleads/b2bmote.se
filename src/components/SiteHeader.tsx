@@ -54,7 +54,7 @@ const SiteHeader = () => {
               key={item.href}
               href={item.href}
               onClick={(e) => handleNavClick(e, item.href)}
-              className="text-cream/85 hover:text-gold font-body text-sm tracking-wide transition-colors"
+              className="text-cream hover:text-gold font-body text-sm font-medium tracking-wide transition-colors"
             >
               {item.label}
             </a>
