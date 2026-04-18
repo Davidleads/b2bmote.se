@@ -33,8 +33,8 @@ const SiteHeader = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled ? "bg-navy/95 backdrop-blur shadow-lg" : "bg-navy"
+      className={`sticky top-0 z-50 w-full transition-all duration-300 border-b border-navy/10 ${
+        scrolled ? "bg-cream/95 backdrop-blur shadow-md" : "bg-cream"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
@@ -54,7 +54,7 @@ const SiteHeader = () => {
               key={item.href}
               href={item.href}
               onClick={(e) => handleNavClick(e, item.href)}
-              className="text-cream hover:text-gold font-body text-sm font-medium tracking-wide transition-colors"
+              className="text-navy hover:text-gold font-body text-sm font-medium tracking-wide transition-colors"
             >
               {item.label}
             </a>
@@ -73,7 +73,7 @@ const SiteHeader = () => {
         {/* Mobile toggle */}
         <button
           type="button"
-          className="md:hidden text-cream p-2 -mr-2"
+          className="md:hidden text-navy p-2 -mr-2"
           aria-label={open ? "Stäng meny" : "Öppna meny"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -84,14 +84,14 @@ const SiteHeader = () => {
 
       {/* Mobile menu */}
       {open && (
-        <nav className="md:hidden bg-navy border-t border-gold/20">
+        <nav className="md:hidden bg-cream border-t border-navy/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-3">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="text-cream/90 hover:text-gold font-body text-base py-2 border-b border-cream/10"
+                className="text-navy hover:text-gold font-body text-base py-2 border-b border-navy/10"
               >
                 {item.label}
               </a>
