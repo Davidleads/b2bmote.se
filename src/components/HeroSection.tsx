@@ -17,30 +17,30 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Middle: CTA */}
-          <div className="text-center max-w-3xl mx-auto">
-            <a
-              href="https://calendly.com/davidsealdeal/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-box inline-flex items-center gap-2 text-xs sm:text-sm"
-            >
-              <Calendar className="w-4 h-4" />
-              Boka ett strategisamtal
-            </a>
+          {/* Middle: subtitle + CTA side by side */}
+          <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-4 sm:gap-6 items-center max-w-4xl mx-auto">
+            <p className="font-heading text-gold text-sm sm:text-lg md:text-xl font-bold text-center sm:text-right">
+              Få ett snitt på 3–8 kvalificerade möten per vecka och fokusera på det ni gör bäst: att stänga affärer.
+            </p>
+            <div className="flex justify-center sm:justify-start">
+              <a
+                href="https://calendly.com/davidsealdeal/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-box inline-flex items-center gap-2 text-xs sm:text-sm whitespace-nowrap"
+              >
+                <Calendar className="w-4 h-4" />
+                Boka ett strategisamtal
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="section-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16 space-y-6 sm:space-y-8">
-          <div className="text-center space-y-4 sm:space-y-6 max-w-3xl mx-auto">
-            <p className="font-heading text-navy text-sm sm:text-lg md:text-xl font-bold">
-              Få ett snitt på 3–8 kvalificerade möten per vecka och fokusera på det ni gör bäst: att stänga affärer.
-            </p>
-            <div className="flex justify-center pt-2">
-              <img src={logo} alt="B2Bmote.se" className="h-12 sm:h-16 md:h-20 w-auto" />
-            </div>
+          <div className="flex justify-center">
+            <img src={logo} alt="B2Bmote.se" className="h-12 sm:h-16 md:h-20 w-auto" />
           </div>
 
           <div className="text-center space-y-4 sm:space-y-6 max-w-3xl mx-auto border-t border-navy/10 pt-8 sm:pt-10">
