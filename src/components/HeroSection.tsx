@@ -1,5 +1,4 @@
 import { Calendar } from "lucide-react";
-import heroArrow from "@/assets/hero-arrow.jpg";
 import logo from "@/assets/logo-b2bmote.png";
 
 const HeroSection = () => {
@@ -7,20 +6,20 @@ const HeroSection = () => {
     <>
       <section className="section-navy relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-4 sm:pt-6 md:pt-10 pb-8 sm:pb-10 md:pb-12 space-y-6 sm:space-y-8">
-          {/* Top: H1 with arrow image to the right */}
+          {/* Top: H1 with logo to the right */}
           <div className="grid grid-cols-[1fr_auto] gap-4 sm:gap-8 items-center">
             <h1 className="font-heading font-900 text-2xl sm:text-4xl lg:text-6xl leading-tight text-cream">
               Maximera er försäljning med kvalificerad mötesbokning för B2B
             </h1>
             <div className="flex justify-center sm:justify-end">
-              <img src={heroArrow} alt="Tillväxtpil – Slipp kalla leads och få färdiga säljmöten direkt i kalendern" width={800} height={800} className="w-24 sm:w-full sm:max-w-xs rounded-lg" />
+              <img src={logo} alt="B2Bmote.se" className="h-16 sm:h-24 md:h-32 w-auto" />
             </div>
           </div>
 
           {/* Middle: subtitle + CTA side by side */}
           <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-4 sm:gap-6 items-center max-w-4xl mx-auto">
             <p className="font-heading text-gold text-sm sm:text-lg md:text-xl font-bold text-center sm:text-right">
-              Få ett snitt på 3–8 kvalificerade möten per vecka och fokusera på det ni gör bäst: att stänga affärer.
+              Få 3–8 kvalificerade möten per vecka. Fokusera på det ni gör bäst: stäng affärer.
             </p>
             <div className="flex justify-center sm:justify-start">
               <a
@@ -38,12 +37,8 @@ const HeroSection = () => {
       </section>
 
       <section className="section-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16 space-y-6 sm:space-y-8">
-          <div className="flex justify-center">
-            <img src={logo} alt="B2Bmote.se" className="h-12 sm:h-16 md:h-20 w-auto" />
-          </div>
-
-          <div className="text-center space-y-4 sm:space-y-6 max-w-3xl mx-auto border-t border-navy/10 pt-8 sm:pt-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+          <div className="text-center space-y-4 sm:space-y-6 max-w-3xl mx-auto">
             <p className="font-heading text-navy text-sm sm:text-lg md:text-xl font-bold">
               Öka träffsäkerheten och konvertera fler leads till kunder
             </p>
