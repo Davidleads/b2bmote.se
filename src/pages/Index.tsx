@@ -15,12 +15,12 @@ const Index = () => {
       <SiteHeader />
       <main id="top" className="min-h-screen">
         <HeroSection />
-        <section id="utmaningar"><PainPointsSection /></section>
+        <section id="utmaningar" className="scroll-mt-20"><PainPointsSection /></section>
         <WhyLosingSection />
-        <section id="metod"><SevarpSection /></section>
+        <section id="metod" className="scroll-mt-20"><SevarpSection /></section>
         <NotOrdinarySection />
-        <section id="insikter"><DataInsightSection /></section>
-        <section id="om-mig"><AboutMeSection /></section>
+        <section id="insikter" className="scroll-mt-20"><DataInsightSection /></section>
+        <section id="om-mig" className="scroll-mt-20"><AboutMeSection /></section>
         <ExclusivitySection />
       </main>
       <SiteFooter />
