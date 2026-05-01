@@ -2,7 +2,7 @@ import { AlertTriangle, User, MapPin, Mail, Phone, Linkedin } from "lucide-react
 
 const ExclusivitySection = () => {
   return (
-    <section id="contact" className="section-cream py-12 sm:py-16 md:py-24">
+    <section id="contact" className="section-cream py-12 sm:py-16 md:py-24 scroll-mt-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6 sm:space-y-10">
         <div className="border-2 border-gold/50 rounded-lg p-4 sm:p-6 max-w-2xl mx-auto bg-cream-dark/40">
           <p className="text-navy font-body text-xs sm:text-sm flex items-center justify-center gap-2 mb-2">
