@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Calendar, Menu, X } from "lucide-react";
-import logo from "@/assets/logo-b2bmote.png";
+import logo from "@/assets/logo-b-icon.png";
 
 const navItems = [
   { label: "Metod", href: "#metod" },
