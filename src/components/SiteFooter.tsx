@@ -58,7 +58,7 @@ const SiteFooter = () => {
               <li className="flex items-start gap-2 text-cream/80">
                 <Linkedin className="w-4 h-4 mt-0.5 text-gold shrink-0" />
                 <a
-                  href="https://www.linkedin.com/in/david-sheikh-7bb8a2319"
+                  href="https://www.linkedin.com/in/davidsheikh/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gold transition-colors"
