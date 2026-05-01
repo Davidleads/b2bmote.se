@@ -54,7 +54,7 @@ const ExclusivitySection = () => {
             <span>070-424 88 89</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/david-sheikh-7bb8a2319"
+            href="https://www.linkedin.com/in/davidsheikh/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 sm:gap-2 text-foreground/80 font-body text-[10px] sm:text-sm hover:text-gold transition-colors"
