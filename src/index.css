@@ -24,24 +24,29 @@
     --muted: 40 15% 90%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 42 60% 54%;
-    --accent-foreground: 220 40% 15%;
+    --accent: 326 78% 56%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 40 15% 85%;
     --input: 40 15% 85%;
-    --ring: 42 60% 54%;
+    --ring: 326 78% 56%;
 
     --radius: 0.5rem;
 
-    --navy: 220 40% 15%;
-    --navy-light: 220 35% 22%;
-    --gold: 42 60% 54%;
-    --gold-light: 42 50% 70%;
+    --navy: 232 55% 14%;
+    --navy-light: 232 45% 22%;
+    /* Brand accent (replaces previous gold) — kept token names "gold/gold-light" to avoid breaking refs */
+    --gold: 326 78% 56%;
+    --gold-light: 280 70% 60%;
+    --brand-blue: 232 85% 58%;
+    --brand-purple: 280 70% 55%;
+    --brand-pink: 326 82% 58%;
     --cream: 40 20% 95%;
     --cream-dark: 40 15% 88%;
+    --gradient-brand: linear-gradient(135deg, hsl(var(--brand-blue)), hsl(var(--brand-purple)) 55%, hsl(var(--brand-pink)));
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -116,49 +121,56 @@
   }
 
   .cta-box {
-    @apply inline-block px-6 py-3 font-body font-semibold text-sm tracking-wide border-2 transition-all duration-300 cursor-pointer;
-    border-color: hsl(var(--gold));
-    background-color: hsl(var(--gold));
-    color: hsl(var(--navy));
+    @apply inline-block px-6 py-3 font-body font-semibold text-sm tracking-wide border-2 transition-all duration-300 cursor-pointer text-white;
+    border-color: transparent;
+    background-image: var(--gradient-brand);
+    box-shadow: 0 6px 20px -8px hsl(var(--brand-pink) / 0.6);
   }
 
   .cta-box:hover {
-    background-color: hsl(var(--gold-light));
+    filter: brightness(1.08);
+    box-shadow: 0 10px 28px -8px hsl(var(--brand-pink) / 0.75);
   }
 
   .cta-box-outline {
-    @apply inline-block px-6 py-3 font-body font-medium text-sm tracking-wide border-2 transition-all duration-300 cursor-pointer;
-    border-color: hsl(var(--gold));
+    @apply inline-block px-6 py-3 font-body font-medium text-sm tracking-wide border-2 transition-all duration-300 cursor-pointer text-cream;
+    border-color: hsl(var(--brand-pink));
     background-color: transparent;
-    color: hsl(var(--cream));
   }
 
   .cta-box-outline:hover {
-    background-color: hsl(var(--gold) / 0.1);
+    background-color: hsl(var(--brand-pink) / 0.12);
   }
 
   .card-navy {
     background-color: hsl(var(--navy));
-    border: 1px solid hsl(var(--gold) / 0.3);
+    border: 1px solid hsl(var(--brand-purple) / 0.3);
     border-radius: 0.75rem;
     padding: 1.5rem;
   }
 
   .card-navy-bordered {
     background-color: hsl(var(--navy));
-    border: 2px solid hsl(var(--gold) / 0.5);
+    border: 2px solid hsl(var(--brand-pink) / 0.5);
     border-radius: 0.75rem;
     padding: 1.5rem;
   }
 
   .gold-divider {
     height: 3px;
-    background: linear-gradient(90deg, transparent, hsl(var(--gold)), transparent);
+    background: var(--gradient-brand);
   }
 
   .gold-badge {
-    background: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));
-    color: hsl(var(--navy));
+    background-image: var(--gradient-brand);
+    color: #ffffff;
     @apply px-4 py-1 text-xs font-body font-bold uppercase tracking-widest;
+  }
+
+  .text-gradient-brand {
+    background-image: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }
