@@ -1,5 +1,5 @@
-import { Mail, Phone, Linkedin, MapPin, Calendar } from "lucide-react";
-import logo from "@/assets/logo-b2bmote.png";
+import { Mail, Phone, Linkedin, MapPin, Calendar, User } from "lucide-react";
+import logo from "@/assets/logo-b2bmote-full.png";
 
 const SiteFooter = () => {
   const year = new Date().getFullYear();
@@ -36,25 +36,29 @@ const SiteFooter = () => {
             </h3>
             <ul className="space-y-3 text-sm font-body">
               <li className="flex items-start gap-2 text-cream/80">
+                <User className="w-4 h-4 mt-0.5 text-gold shrink-0" />
+                <span>David Sheikh</span>
+              </li>
+              <li className="flex items-start gap-2 text-cream/80">
                 <Phone className="w-4 h-4 mt-0.5 text-gold shrink-0" />
-                <a href="tel:+46720000000" className="hover:text-gold transition-colors">
-                  +46 72 000 00 00
+                <a href="tel:+46704248889" className="hover:text-gold transition-colors">
+                  070-424 88 89
                 </a>
               </li>
               <li className="flex items-start gap-2 text-cream/80">
                 <Mail className="w-4 h-4 mt-0.5 text-gold shrink-0" />
-                <a href="mailto:david@b2bmote.se" className="hover:text-gold transition-colors break-all">
-                  david@b2bmote.se
+                <a href="mailto:davidsealdeal@gmail.com" className="hover:text-gold transition-colors break-all">
+                  davidsealdeal@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2 text-cream/80">
                 <MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" />
-                <span>Sverige</span>
+                <span>Helsingborg</span>
               </li>
               <li className="flex items-start gap-2 text-cream/80">
                 <Linkedin className="w-4 h-4 mt-0.5 text-gold shrink-0" />
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/david-sheikh-7bb8a2319"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gold transition-colors"
