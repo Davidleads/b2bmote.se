@@ -1,5 +1,5 @@
 import { Calendar } from "lucide-react";
-import logo from "@/assets/logo-b2bmote.png";
+import logo from "@/assets/logo-b2bmote-full.png";
 
 const HeroSection = () => {
   return (
