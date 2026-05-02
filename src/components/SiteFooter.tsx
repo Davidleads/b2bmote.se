@@ -22,11 +22,10 @@ const SiteFooter = () => {
               Navigera
             </h3>
             <ul className="space-y-2 text-sm font-body">
-              <li><a href="/#metod" className="text-cream/80 hover:text-gold transition-colors">Metod</a></li>
-              <li><a href="/#insikter" className="text-cream/80 hover:text-gold transition-colors">Insikter</a></li>
-              <li><a href="/#om-mig" className="text-cream/80 hover:text-gold transition-colors">Om mig</a></li>
-              <li><a href="/blogg/bra-produkt-fa-avslut" className="text-cream/80 hover:text-gold transition-colors">Blogg</a></li>
-              <li><a href="/#contact" className="text-cream/80 hover:text-gold transition-colors">Kontakt</a></li>
+              <li><a href="#metod" className="text-cream/80 hover:text-gold transition-colors">Metod</a></li>
+              <li><a href="#insikter" className="text-cream/80 hover:text-gold transition-colors">Insikter</a></li>
+              <li><a href="#om-mig" className="text-cream/80 hover:text-gold transition-colors">Om mig</a></li>
+              <li><a href="#contact" className="text-cream/80 hover:text-gold transition-colors">Kontakt</a></li>
             </ul>
           </div>
 
