@@ -1,4 +1,5 @@
 import { Search, Settings, PiggyBank, ShieldCheck, Handshake, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const sevarpItems = [
   { letter: "S", label: "Situation", desc: "Kartläggning av kundens nuvarande verklighet." },
@@ -53,10 +54,13 @@ const SevarpSection = () => {
     <section className="section-cream py-12 sm:py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="bg-cream-dark border-2 border-gold/30 rounded-xl p-5 sm:p-8 md:p-12">
-          <h3 className="font-heading font-bold text-lg sm:text-2xl md:text-3xl text-navy mb-2">
-            <Settings className="inline w-5 h-5 sm:w-7 sm:h-7 text-gold mr-2 -mt-1" />
-            HUR DET FUNKAR <span className="font-body text-sm sm:text-lg font-normal">(Förenklad SEVARP)</span>
-          </h3>
+          <Link to="/sevarp" className="block group">
+            <h3 className="font-heading font-bold text-lg sm:text-2xl md:text-3xl text-navy mb-2 group-hover:text-gold transition-colors">
+              <Settings className="inline w-5 h-5 sm:w-7 sm:h-7 text-gold mr-2 -mt-1" />
+              HUR DET FUNKAR <span className="font-body text-sm sm:text-lg font-normal">(Förenklad SEVARP)</span>
+              <span className="ml-2 text-gold text-sm sm:text-base font-body underline">Läs mer →</span>
+            </h3>
+          </Link>
           <p className="font-body text-xs sm:text-base text-foreground mb-6 sm:mb-10">
             Jag jobbar med en strukturerad metod för att driva affärer från första kontakt till avslut:
           </p>
