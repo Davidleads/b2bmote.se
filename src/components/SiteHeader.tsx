@@ -5,6 +5,7 @@ import logo from "@/assets/logo-b-icon.png";
 
 const navItems = [
   { label: "Metod", href: "#metod" },
+  { label: "SEVARP", href: "/sevarp" },
   { label: "Insikter", href: "#insikter" },
   { label: "Om mig", href: "#om-mig" },
   { label: "Blogg", href: "/blogg/bra-produkt-fa-avslut" },
