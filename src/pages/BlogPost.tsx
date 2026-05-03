@@ -124,7 +124,7 @@ const BlogPost = () => {
             </div>
 
             <p>
-              Genom att arbeta strukturerat med hela säljprocessen – från nuläge till beslut – går det att förändra detta. Ett sätt att se det är genom att bryta ner dialogen i flera steg: först måste kundens situation förstås på riktigt. Därefter behöver effekten av nuläget tydliggöras.
+              Genom att arbeta strukturerat med hela säljprocessen – från nuläge till beslut – går det att förändra detta. Ett sätt att se det är att bryta ner dialogen i flera steg: först måste kundens situation förstås på riktigt. Därefter behöver effekten av nuläget tydliggöras – alltså vad det faktiskt leder till i praktiken.
             </p>
 
             <p className="text-xl sm:text-2xl font-heading font-bold text-gradient-brand">
@@ -132,7 +132,7 @@ const BlogPost = () => {
             </p>
 
             <p>
-              När det blir tydligt uppstår ett behov. Det är först då värdet i en lösning faktiskt kan uppfattas. Men många hoppar över dessa steg och går direkt till pris och erbjudande. Det leder till att affären känns osäker, vilket skapar tvekan.
+              När konsekvenserna av nuläget blir tydliga uppstår ett verkligt behov. Det är först då värdet i en lösning kan uppfattas på riktigt. Men många hoppar över dessa steg och går direkt till pris och erbjudande. Det leder till att affären känns osäker, vilket skapar tvekan.
             </p>
 
             <p>
