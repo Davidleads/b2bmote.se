@@ -1,10 +1,63 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar } from "lucide-react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import blogImage from "@/assets/blog-behov.jpeg";
 
+const BLOG_URL = "https://b2bmote.se/blogg/bra-produkt-fa-avslut";
+const BLOG_TITLE = "Bra produkt men få avslut? Så löser du det | B2Bmote.se";
+const BLOG_DESC = "Många B2B-företag har bra produkter men tappar affärer i säljprocessen. Så bygger du tydlighet i kundens beslut och stänger fler affärer.";
+
+const setMeta = (name: string, content: string, attr: "name" | "property" = "name") => {
+  let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${name}"]`);
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attr, name);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+};
+
 const BlogPost = () => {
+  useEffect(() => {
+    const prevTitle = document.title;
+    document.title = BLOG_TITLE;
+    setMeta("description", BLOG_DESC);
+    setMeta("og:title", BLOG_TITLE, "property");
+    setMeta("og:description", BLOG_DESC, "property");
+    setMeta("og:url", BLOG_URL, "property");
+    setMeta("og:type", "article", "property");
+
+    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = BLOG_URL;
+
+    const ld = document.createElement("script");
+    ld.type = "application/ld+json";
+    ld.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: "Bra produkt men få avslut? Därför tappar företag affärer – och så löser du det",
+      description: BLOG_DESC,
+      author: { "@type": "Person", name: "David Sheikh" },
+      publisher: { "@type": "Organization", name: "B2Bmote.se" },
+      mainEntityOfPage: BLOG_URL,
+      url: BLOG_URL,
+    });
+    document.head.appendChild(ld);
+
+    return () => {
+      document.title = prevTitle;
+      if (canonical) canonical.href = "https://b2bmote.se/";
+      ld.remove();
+    };
+  }, []);
+
   return (
     <>
       <SiteHeader />
