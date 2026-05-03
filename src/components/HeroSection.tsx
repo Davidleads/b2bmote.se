@@ -18,8 +18,12 @@ const HeroSection = () => {
 
           {/* Middle: subtitle + CTA side by side */}
           <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-4 sm:gap-6 items-center max-w-4xl mx-auto">
-            <p className="font-heading text-gold text-sm sm:text-lg md:text-xl font-bold text-center sm:text-right">
-              Få 3–8 kvalificerade möten per vecka. Fokusera på det ni gör bäst: stäng affärer.
+            <p className="font-heading text-sm sm:text-lg md:text-xl font-bold text-center sm:text-right leading-snug">
+              <span className="text-gradient-brand">3–8 kvalificerade möten</span>
+              <span className="text-cream"> per vecka.</span>
+              <br />
+              <span className="text-cream/80 font-medium">Fokusera på det ni gör bäst – </span>
+              <span className="text-gradient-brand">stäng affärer.</span>
             </p>
             <div className="flex justify-center sm:justify-start">
               <a
