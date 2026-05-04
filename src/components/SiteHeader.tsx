@@ -4,6 +4,7 @@ import { Calendar, Menu, X } from "lucide-react";
 import logo from "@/assets/logo-b-icon.png";
 
 const navItems = [
+  { label: "Startsida", href: "/" },
   { label: "Metod", href: "#metod" },
   { label: "SEVARP", href: "/sevarp" },
   { label: "Insikter", href: "#insikter" },
