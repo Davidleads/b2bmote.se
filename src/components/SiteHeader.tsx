@@ -26,20 +26,26 @@ const SiteHeader = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const scrollToHash = (hash: string) => {
+    const el = document.querySelector(hash) as HTMLElement | null;
+    if (!el) return;
+    const header = document.querySelector("header") as HTMLElement | null;
+    const offset = (header?.offsetHeight ?? 0) + 8;
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href.startsWith("#")) {
       e.preventDefault();
       setOpen(false);
       if (location.pathname !== "/") {
         navigate("/" + href);
-        setTimeout(() => {
-          const el = document.querySelector(href);
-          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 80);
+        setTimeout(() => scrollToHash(href), 120);
         return;
       }
-      const el = document.querySelector(href);
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      // Wait for mobile menu to collapse before measuring offset
+      setTimeout(() => scrollToHash(href), 60);
     } else {
       setOpen(false);
     }
