@@ -7,7 +7,7 @@ const navItems = [
   { label: "Startsida", href: "/" },
   { label: "Metod", href: "#metod" },
   { label: "SEVARP", href: "/sevarp" },
-  { label: "Insikter", href: "#insikter" },
+  { label: "Affärsinsikter", href: "#insikter" },
   { label: "Om mig", href: "#om-mig" },
   { label: "Blogg", href: "/blogg/bra-produkt-fa-avslut" },
   { label: "Kontakt", href: "#contact" },
