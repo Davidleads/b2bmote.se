@@ -7,12 +7,12 @@ const HeroSection = () => {
       <section className="section-navy relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-4 sm:pt-6 md:pt-10 pb-8 sm:pb-10 md:pb-12 space-y-6 sm:space-y-8">
           {/* Top: H1 with logo to the right */}
-          <div className="grid grid-cols-[1fr_auto] gap-4 sm:gap-8 items-center">
-            <h1 className="font-heading font-900 text-2xl sm:text-4xl lg:text-6xl leading-tight text-cream">
+          <div className="grid grid-cols-[1fr_auto] gap-4 sm:gap-6 md:gap-8 items-center">
+            <h1 className="font-heading font-900 text-2xl sm:text-4xl lg:text-6xl leading-tight text-cream pr-2 sm:pr-4 break-words hyphens-auto">
               Maximera er försäljning med kvalificerad mötesbokning för B2B
             </h1>
-            <div className="flex justify-center sm:justify-start sm:-ml-4 md:-ml-8 lg:-ml-12">
-              <img src={logo} alt="B2Bmote.se – Data, Strategi och Tillväxt" className="h-40 sm:h-56 md:h-72 lg:h-80 w-auto" />
+            <div className="flex justify-center sm:justify-start shrink-0 sm:-ml-2 md:-ml-4 lg:-ml-8">
+              <img src={logo} alt="B2Bmote.se – Data, Strategi och Tillväxt" className="h-32 sm:h-48 md:h-64 lg:h-72 w-auto" />
             </div>
           </div>
 
