@@ -11,7 +11,7 @@ const HeroSection = () => {
             <h1 className="font-heading font-900 text-2xl sm:text-4xl lg:text-6xl leading-tight text-cream">
               Maximera er försäljning med kvalificerad mötesbokning för B2B
             </h1>
-            <div className="flex justify-center sm:justify-start sm:-ml-4 md:-ml-8 lg:-ml-12">
+            <div className="flex justify-center sm:justify-start sm:-ml-16 md:-ml-24 lg:-ml-32">
               <img src={logo} alt="B2Bmote.se – Data, Strategi och Tillväxt" className="h-40 sm:h-56 md:h-72 lg:h-80 w-auto" />
             </div>
           </div>
