@@ -39,16 +39,27 @@ const BlogPost = () => {
 
     const ld = document.createElement("script");
     ld.type = "application/ld+json";
-    ld.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline: "Bra produkt men få avslut? Därför tappar företag affärer – och så löser du det",
-      description: BLOG_DESC,
-      author: { "@type": "Person", name: "David Sheikh" },
-      publisher: { "@type": "Organization", name: "B2Bmote.se" },
-      mainEntityOfPage: BLOG_URL,
-      url: BLOG_URL,
-    });
+    ld.text = JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: "Bra produkt men få avslut? Därför tappar företag affärer – och så löser du det",
+        description: BLOG_DESC,
+        inLanguage: "sv-SE",
+        author: { "@type": "Person", name: "David Sheikh" },
+        publisher: { "@type": "Organization", name: "B2Bmote.se", url: "https://b2bmote.se/" },
+        mainEntityOfPage: BLOG_URL,
+        url: BLOG_URL,
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Startsida", item: "https://b2bmote.se/" },
+          { "@type": "ListItem", position: 2, name: "Blogg", item: BLOG_URL },
+        ],
+      },
+    ]);
     document.head.appendChild(ld);
 
     return () => {
