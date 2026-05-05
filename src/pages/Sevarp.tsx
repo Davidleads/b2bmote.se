@@ -36,9 +36,35 @@ const Sevarp = () => {
     }
     canonical.href = PAGE_URL;
 
+    const ld = document.createElement("script");
+    ld.type = "application/ld+json";
+    ld.text = JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: "Där affären faktiskt avgörs: Situation, Effekt och Värde",
+        description: PAGE_DESC,
+        inLanguage: "sv-SE",
+        author: { "@type": "Person", name: "David Sheikh" },
+        publisher: { "@type": "Organization", name: "B2Bmote.se", url: "https://b2bmote.se/" },
+        mainEntityOfPage: PAGE_URL,
+        url: PAGE_URL,
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Startsida", item: "https://b2bmote.se/" },
+          { "@type": "ListItem", position: 2, name: "SEVARP", item: PAGE_URL },
+        ],
+      },
+    ]);
+    document.head.appendChild(ld);
+
     return () => {
       document.title = prevTitle;
       if (canonical) canonical.href = "https://b2bmote.se/";
+      ld.remove();
     };
   }, []);
 
