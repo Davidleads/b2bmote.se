@@ -72,6 +72,40 @@ const BlogPost = () => {
             Tillbaka till startsidan
           </Link>
 
+          {/* New post: Rosa elefanten */}
+          <header className="space-y-4 mb-8">
+            <span className="gold-badge inline-block">Blogginlägg</span>
+            <h1 className="font-heading font-900 text-3xl sm:text-4xl md:text-5xl leading-tight text-navy">
+              Sluta oroa dig för vad du ska säga – börja fokusera på hur du säger det
+            </h1>
+            <p className="text-navy/70 font-heading italic text-base sm:text-lg">
+              (den rosa elefanten i säljsamtalet)
+            </p>
+            <p className="text-navy/60 font-body text-sm">
+              Av David Sheikh · B2Bmote.se
+            </p>
+          </header>
+
+          <div className="prose-content space-y-6 font-body text-base sm:text-lg leading-relaxed text-navy/90 mb-12">
+            <p>
+              Det finns många åsikter om vad man får och inte får säga i ett säljsamtal. Frågor som "stör jag?" eller "har du en minut?" anses av vissa vara fel väg att gå, men jag håller inte med. Det är inte vad du säger som avgör, utan hur du säger det. De här fraserna handlar egentligen om respekt och om hur du visar att du förstår, att du kliver in i någon annans tid.
+            </p>
+            <p>
+              Det som avgör om du får fortsätta prata är tonen bakom orden. Har du auktoritet i rösten? Är du trygg i det du säger? Kan du förmedla att du faktiskt har något av värde? Det hörs direkt. Kunden känner snabbt om du vet vad du pratar om eller om du bara testar något.
+            </p>
+            <p>
+              För att kunna ha den tyngden krävs att du vet vem du kontaktar, varför du gör det och vad du kan bidra med. När du har den förståelsen, förändras samtalet. Du går från att försöka sälja till att faktiskt leda dialogen.
+            </p>
+            <p>
+              Invändningar kommer alltid. "Jag har inte tid" eller "det är mycket just nu" är standard. Det är också där många tappar affären. De backar direkt istället för att stanna kvar i samtalet. Men ofta är just tid problemet, och om du kan visa att du bidrar med något som sparar tid eller skapar värde finns det en anledning att lyssna vidare.
+            </p>
+            <p className="font-semibold text-navy">
+              I slutändan är det inte orden som avgör om du får fortsätta samtalet, det är förtroendet du skapar i stunden. Och det byggs inte genom perfekta formuleringar, utan genom närvaro, tydlighet och en genuin förståelse för den du pratar med. När det sitter, märks det direkt. Och det är där affärer faktiskt börjar.
+            </p>
+          </div>
+
+          <hr className="border-navy/15 mb-12" />
+
           {/* Header */}
           <header className="space-y-4 mb-8">
             <span className="gold-badge inline-block">Blogginlägg</span>
