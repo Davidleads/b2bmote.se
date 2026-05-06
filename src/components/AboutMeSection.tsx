@@ -9,7 +9,7 @@ const AboutMeSection = () => {
           <div className="bg-cream-dark p-4 sm:p-6 flex items-center justify-center">
             <img
               src={davidPhoto}
-              alt="David Sheikh"
+              alt="David Sheikh – Account Manager och expert på kvalificerad B2B-mötesbokning"
               className="w-40 h-52 sm:w-48 sm:h-60 md:w-64 md:h-80 object-cover object-top rounded-lg"
               loading="lazy"
               width={256}

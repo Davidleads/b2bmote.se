@@ -59,7 +59,7 @@ const SiteHeader = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2" aria-label="B2Bmote.se startsida">
-          <img src={logo} alt="B2Bmote.se" className="h-8 sm:h-10 w-auto" />
+          <img src={logo} alt="B2Bmote.se logotyp – kvalificerad mötesbokning för B2B" className="h-8 sm:h-10 w-auto" />
         </Link>
 
         {/* Desktop nav */}

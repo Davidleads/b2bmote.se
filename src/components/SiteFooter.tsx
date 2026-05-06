@@ -10,7 +10,7 @@ const SiteFooter = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
           {/* Brand */}
           <div className="space-y-3 sm:col-span-2 md:col-span-1">
-            <img src={logo} alt="B2Bmote.se" className="h-10 w-auto" />
+            <img src={logo} alt="B2Bmote.se logotyp – mötesbokning för B2B" className="h-10 w-auto" />
             <p className="text-cream/70 text-sm font-body leading-relaxed max-w-xs">
               Kvalificerad mötesbokning för B2B. Slipp kalla leads – få färdiga säljmöten direkt i kalendern.
             </p>
